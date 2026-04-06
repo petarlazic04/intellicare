@@ -1,0 +1,12 @@
+{
+  "name": "Global Reset",
+  "updates": [
+    { "topic": "sensors/kitchen/fire", "data": { "temperature": 25.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" } },
+    { "topic": "sensors/bathroom/fire", "data": { "temperature": 25.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" } },
+    { "topic": "sensors/bedroom/fire", "data": { "temperature": 25.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" } },
+    { "topic": "sensors/living_room/pir", "data": { "motionDetected": false, "lastDetected": 0 } },
+    { "topic": "sensors/kitchen/pir", "data": { "motionDetected": false, "lastDetected": 0 } },
+    { "topic": "sensors/wristband", "data": { "heartRate": 72, "spo2": 98, "systolic": 120, "diastolic": 80, "location": "living_room" } },
+    { "topic": "actuators/lock", "data": { "locked": true, "lastChanged": 0 } }
+  ]
+}

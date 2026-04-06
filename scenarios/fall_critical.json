@@ -1,0 +1,24 @@
+{
+  "name": "Bathroom Fall - Critical",
+  "updates": [
+    {
+      "topic": "sensors/bathroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband/motion",
+      "data": { 
+        "motion": {
+          "accelX": 0.0,
+          "accelY": 0.0,
+          "accelZ": 9.5,
+          "location": "bathroom"
+        },
+        "heartRate": 40, 
+        "spo2": 84, 
+        "systolic": 85, 
+        "diastolic": 55
+      }
+    }
+  ]
+}

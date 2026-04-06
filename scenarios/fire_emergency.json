@@ -1,0 +1,17 @@
+{
+  "name": "Kitchen Fire Emergency",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 88.5, "smokeLevel": 620.0, "coLevel": 45, "status": "emergency" }
+    },
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 95, "spo2": 97, "systolic": 130, "diastolic": 85, "location": "kitchen" }
+    }
+  ]
+}

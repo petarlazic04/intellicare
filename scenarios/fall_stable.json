@@ -1,0 +1,30 @@
+{
+  "name": "Bedroom Fall - Stable Vitals",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband/motion",
+      "data": { 
+        "accelX": 0.0,
+        "accelY": 0.0,
+        "accelZ": 9.8, 
+        "location": "bedroom",
+        "timestamp": 1712345678 
+      }
+    },
+    {
+      "topic": "sensors/wristband/health",
+      "data": { 
+        "heartRate": 80, 
+        "spo2": 98, 
+        "systolic": 120, 
+        "diastolic": 80, 
+        "location": "bedroom",
+        "timestamp": 1712345678 
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+#pragma once
+#include "../Actuator.hpp"
+#include "../core/DataModel.hpp"
+#include "../core/PayloadContracts.hpp"
+#include "../core/EnumTraits.hpp"
+#include "../../environment/Environment.hpp"
+#include "../../core/Topics.hpp"
+#include <ctime>
+#include <iostream>
+
+class Speaker : public Actuator {
+  public:
+    Speaker(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883):
+    Actuator(deviceId, DeviceType::SPEAKER, location, broker, subscribeTopic, env, port){}
+    
+    void act(const Message& msg) override {
+        if(msg.payload.payloadType != PayloadType::COMMAND){
+            std::cerr << "[Speaker] Invalid payload type\n";
+            return;
+        }
+
+        try {
+            json data = msg.payload.data;
+            DeviceActionType action = from_string_enum<DeviceActionType>(data.at("actionType").get<std::string>());
+            
+            int newVolume = -1;
+
+            if (action == DeviceActionType::TURN_ON) {
+                newVolume = 50;
+            } else if (action == DeviceActionType::TURN_OFF) {
+                newVolume = 0;
+            } else if (action == DeviceActionType::SET_LEVEL) {
+                newVolume = std::stoi(data.at("value").get<std::string>());
+                newVolume = std::max(0, std::min(newVolume, (int)MAX_SPEAKER_VOLUME));
+            } else {
+                std::cerr << "[Speaker] Unsupported action\n";
+                return;
+            }
+
+            const std::string topic = topics::actuatorTopic(getLocation(), "speaker");
+            json speakerData = environment.readFromTopic(topic);
+            
+            speakerData["volume"] = newVolume;
+            speakerData["lastActivated"] = std::time(nullptr);
+            
+            environment.writeToTopic(topic, speakerData);
+
+            std::cout << "[Speaker] " << to_string_enum(getLocation()) << " volume set to " << newVolume << "\n";
+            std::cout << "[Speaker] Received speaker command: " << to_string_enum<DeviceActionType>(action) << "\n";
+        } catch(const std::exception& e) {
+            std::cerr << "[Speaker] Error: " << e.what() << "\n";
+        }
+    }
+};

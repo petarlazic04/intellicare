@@ -1,0 +1,13 @@
+{
+  "name": "Bedroom Cardiac Event",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 155, "spo2": 94, "systolic": 195, "diastolic": 115, "location": "bedroom" }
+    }
+  ]
+}

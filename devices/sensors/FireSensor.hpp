@@ -6,6 +6,7 @@
 #include "../Sensor.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <thread>
 #include <iostream>
 
@@ -37,10 +38,9 @@ public:
             {"coLevel", coLevel}
         };
 
-        std::cout << "[FireSensor] " << to_string_enum(getLocation()) 
-                  << " Sampled -> Temp: " << temperature 
-                  << "°C, Smoke: " << smokeLevel 
-                  << ", CO: " << coLevel << "\n";
+        json metadata = {{"temperature", temperature}, {"smokeLevel", smokeLevel}, {"coLevel", coLevel}};
+        Logger::getInstance().logSensorData(getId(), DeviceType::FIRE_SENSOR, getLocation(),
+            "FireSensor sampled", metadata);
         
         publish(msg);
     }

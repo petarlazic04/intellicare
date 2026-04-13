@@ -5,6 +5,7 @@
 #include "../core/EnumTraits.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -16,7 +17,7 @@ class Light : public Actuator {
   private:
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            std::cerr << "[Light] Invalid payload type\n";
+            Logger::getInstance().logError(getId(), DeviceType::LIGHT, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -33,7 +34,7 @@ class Light : public Actuator {
                 newBrightness = std::stoi(data.at("value").get<std::string>());
                 newBrightness = std::max(0, std::min(newBrightness, (int)MAX_LIGHT_BRIGHTNESS));
             } else {
-                std::cerr << "[Light] Unsupported action\n";
+                Logger::getInstance().logError(getId(), DeviceType::LIGHT, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -45,7 +46,9 @@ class Light : public Actuator {
             
             environment.writeToTopic(topic, lightData);
 
-            std::cout << "[Light] " << to_string_enum(getLocation()) << " brightness set to " << newBrightness << "\n";
+            json metadata = {{"brightness", newBrightness}, {"location", to_string_enum(getLocation())}};
+            Logger::getInstance().logActuatorAction(getId(), DeviceType::LIGHT, getLocation(),
+                "Brightness set to " + std::to_string(newBrightness), metadata);
 
         } catch(const std::exception& e) {
             std::cerr << "[Light] Error: " << e.what() << "\n";

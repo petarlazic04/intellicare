@@ -6,6 +6,7 @@
 #include "../Sensor.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <thread>
 #include <iostream>
 
@@ -38,7 +39,8 @@ public:
         };
 
         if (motionDetected) {
-            std::cout << "[PIRSensor] Motion DETECTED in " << to_string_enum(getLocation()) << "\n";
+            Logger::getInstance().logSensorData(getId(), DeviceType::PIR_SENSOR, getLocation(),
+                "Motion DETECTED in " + to_string_enum(getLocation()), {{"motionDetected", true}});
         }
         
         publish(msg);

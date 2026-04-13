@@ -5,6 +5,7 @@
 #include "../core/EnumTraits.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -15,7 +16,7 @@ class Speaker : public Actuator {
     
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            std::cerr << "[Speaker] Invalid payload type\n";
+            Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -33,7 +34,7 @@ class Speaker : public Actuator {
                 newVolume = std::stoi(data.at("value").get<std::string>());
                 newVolume = std::max(0, std::min(newVolume, (int)MAX_SPEAKER_VOLUME));
             } else {
-                std::cerr << "[Speaker] Unsupported action\n";
+                Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -45,10 +46,12 @@ class Speaker : public Actuator {
             
             environment.writeToTopic(topic, speakerData);
 
-            std::cout << "[Speaker] " << to_string_enum(getLocation()) << " volume set to " << newVolume << "\n";
-            std::cout << "[Speaker] Received speaker command: " << to_string_enum<DeviceActionType>(action) << "\n";
+            json metadata = {{"volume", newVolume}, {"action", to_string_enum<DeviceActionType>(action)}, {"location", to_string_enum(getLocation())}};
+            Logger::getInstance().logActuatorAction(getId(), DeviceType::SPEAKER, getLocation(),
+                "Volume set to " + std::to_string(newVolume) + ", action: " + to_string_enum<DeviceActionType>(action), metadata);
         } catch(const std::exception& e) {
-            std::cerr << "[Speaker] Error: " << e.what() << "\n";
+            Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), 
+                std::string("Error: ") + e.what());
         }
     }
 };

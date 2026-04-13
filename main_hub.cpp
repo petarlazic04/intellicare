@@ -1,4 +1,7 @@
 #include "hub/Hub.hpp"
+#include "core/Logger.hpp"
+#include <thread>
+#include <chrono>
 #include <thread>
 #include <chrono>
 
@@ -7,7 +10,8 @@ int main() {
     // Connects, Subscribes, and sets up Message Handlers
     Hub smartHub("localhost", 1883);
 
-    std::cout << "[Main] Hub is running. Monitoring for emergencies...\n";
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "Hub is running. Monitoring for emergencies...");
 
     // Keep the main thread alive while the MQTT callbacks run logic
     while (true) {

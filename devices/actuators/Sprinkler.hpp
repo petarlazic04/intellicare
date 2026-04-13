@@ -5,6 +5,7 @@
 #include "../core/EnumTraits.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -16,7 +17,7 @@ public:
 private:
     void act(const Message& msg) override {
         if (msg.payload.payloadType != PayloadType::COMMAND) {
-            std::cerr << "[Sprinkler] Invalid payload type\n";
+            Logger::getInstance().logError(getId(), DeviceType::SPRINKLER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -30,7 +31,7 @@ private:
             } else if (action == DeviceActionType::STOP || action == DeviceActionType::TURN_OFF) {
                 shouldBeActive = false;
             } else {
-                std::cerr << "[Sprinkler] Unsupported action\n";
+                Logger::getInstance().logError(getId(), DeviceType::SPRINKLER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -42,8 +43,9 @@ private:
             
             environment.writeToTopic(topic, sprinklerData);
 
-            std::cout << "[Sprinkler] " << to_string_enum(getLocation()) 
-                      << " status set to " << (shouldBeActive ? "ACTIVE" : "INACTIVE") << "\n";
+            json metadata = {{"active", shouldBeActive}, {"location", to_string_enum(getLocation())}};
+            Logger::getInstance().logActuatorAction(getId(), DeviceType::SPRINKLER, getLocation(),
+                "Status set to " + std::string(shouldBeActive ? "ACTIVE" : "INACTIVE"), metadata);
 
         } catch (const std::exception& e) {
             std::cerr << "[Sprinkler] Error: " << e.what() << "\n";

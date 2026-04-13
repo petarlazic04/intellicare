@@ -2,6 +2,7 @@
 
 #include "../core/DataModel.hpp"
 #include "../core/EnumTraits.hpp"
+#include "../core/Logger.hpp"
 #include "../third_party/nlohmann/json.hpp"
 #include <mutex>
 #include <iostream>
@@ -18,7 +19,8 @@ private:
     mutable std::mutex dataMutex;
 
     Environment() {
-        std::cout << "[Environment] Initializing...\n";
+        Logger::getInstance().logInfo("Environment", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Initializing...");
         
         houseData["timestamp"] = std::chrono::system_clock::now().time_since_epoch().count();
         houseData["rooms"] = json::object();
@@ -49,7 +51,8 @@ private:
         houseData["emergency"] = {{"active", false}, {"type", ""}, {"location", ""}, {"timestamp", 0}};
         houseData["wristband"] = {{"heartRate", 72}, {"spo2", 98}, {"systolic", 120}, {"diastolic", 80}, {"location", "living_room"}, {"lastUpdate", 0}};
         
-        std::cout << "[Environment] Initialized\n";
+        Logger::getInstance().logInfo("Environment", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Initialized");
     }
 
     std::string toLowerString(std::string s) const {

@@ -6,6 +6,7 @@
 #include "../Sensor.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <thread>
 #include <iostream>
 
@@ -38,8 +39,9 @@ public:
             {"diastolic", diastolic}
         };
 
-        std::cout << "[HealthSensor] Sampled -> HR: " << heartrate 
-                  << ", SpO2: " << spo2 << "%, BP: " << systolic << "/" << diastolic << "\n";
+        json metadata = {{"heartRate", heartrate}, {"spo2", spo2}, {"systolic", systolic}, {"diastolic", diastolic}};
+        Logger::getInstance().logSensorData(getId(), DeviceType::WRISTBAND, getLocation(), 
+            "HealthSensor sampled", metadata);
         
         publish(msg);
     }

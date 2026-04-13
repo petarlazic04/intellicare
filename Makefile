@@ -12,8 +12,11 @@ SIMULATOR_SRC = main_house.cpp
 HUB_EXE = test_hub
 SIMULATOR_EXE = test_house
 
-# Default target - build both tests
-all: $(HUB_EXE) $(SIMULATOR_EXE)
+# Log viewer executable
+LOG_VIEWER_EXE = log_viewer
+
+# Default target - build both tests and log viewer
+all: $(HUB_EXE) $(SIMULATOR_EXE) $(LOG_VIEWER_EXE)
 
 # Build hub test
 $(HUB_EXE): $(HUB_SRC)
@@ -23,9 +26,13 @@ $(HUB_EXE): $(HUB_SRC)
 $(SIMULATOR_EXE): $(SIMULATOR_SRC)
 	$(CXX) $(CXXFLAGS) $(SIMULATOR_SRC) $(LDFLAGS) -o $(SIMULATOR_EXE)
 
+# Build log viewer
+$(LOG_VIEWER_EXE): log_viewer.cpp
+	$(CXX) $(CXXFLAGS) log_viewer.cpp -o $(LOG_VIEWER_EXE)
+
 # Clean build artifacts
 clean:
-	rm -f $(HUB_EXE) $(SIMULATOR_EXE)
+	rm -f $(HUB_EXE) $(SIMULATOR_EXE) $(LOG_VIEWER_EXE)
 
 # Rebuild everything
 rebuild: clean all

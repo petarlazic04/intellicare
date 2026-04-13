@@ -7,6 +7,7 @@
 #include "../Sensor.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <thread>
 #include <iostream>
 
@@ -51,8 +52,10 @@ public:
             {"magnitude", magnitude}
         };
 
-        std::cout << "[MotionSensor] Independent Wearable -> Magnitude: " << magnitude 
-                  << " at Location: " << locStr << "\n";
+        json metadata = {{"accelX", accelX}, {"accelY", accelY}, {"accelZ", accelZ}, 
+                         {"gyroX", gyroX}, {"gyroY", gyroY}, {"gyroZ", gyroZ}, {"magnitude", magnitude}};
+        Logger::getInstance().logSensorData(getId(), DeviceType::WRISTBAND, msg.location,
+            "Independent Wearable MotionSensor sampled", metadata);
         
         publish(msg);
     }

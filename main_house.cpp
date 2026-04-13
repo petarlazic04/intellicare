@@ -1,4 +1,6 @@
 #include "house/House.hpp"
+#include "core/Logger.hpp"
+#include <vector>
 #include <vector>
 
 int main() {
@@ -13,9 +15,20 @@ int main() {
     myHouse.autoinstall();
 
     int scenario;
-    std::cout << "Scenarios:\n" << "\n1. Fire emergency\n2. Health emergency\n";
-    std::cout << "3. Fall (vitals stable)\n4. Fall (vitals critical)\n5. Global reset\n";
-    std::cout << "Choose a scenario:\n";
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "Available scenarios:");
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "1. Fire emergency");
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "2. Health emergency");
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "3. Fall (vitals stable)");
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "4. Fall (vitals critical)");
+    Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+        "5. Global reset");
+    
+    std::cout << "Choose a scenario: ";
     std::cin >> scenario;
     
     myHouse.loadScenario(scenarios[scenario-1]);

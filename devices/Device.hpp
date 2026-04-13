@@ -3,6 +3,7 @@
 #include <string>
 #include "../core/DataModel.hpp"
 #include "../core/JSONAdapter.hpp"
+#include "../core/Logger.hpp"
 
 class Environment;  // Forward declaration
 
@@ -20,7 +21,7 @@ class Device{
        const std::string& broker, Environment& env, int port = 1883)
       :deviceId(deviceId), deviceType(deviceType), location(location), mqtt(broker,port), environment(env){
         if(!mqtt.connect()){
-          std::cerr << "Failed to connect device " << deviceId << " to broker\n"; 
+          Logger::getInstance().logError(deviceId, deviceType, location, "Failed to connect device to broker");
         }
       }
     

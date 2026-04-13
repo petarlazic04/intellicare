@@ -9,6 +9,7 @@
 #include "../environment/Environment.hpp"
 #include "../core/Topics.hpp"
 #include "../core/DataModel.hpp"
+#include "../core/Logger.hpp"
 
 
 #include "../devices/sensors/FireSensor.hpp"
@@ -35,8 +36,8 @@ public:
         : env(Environment::getInstance()), broker(mqttBroker), port(mqttPort) {}
 
     void autoinstall() {
-        std::cout << "[House] Starting autoinstall on port " << port << "...\n";
-
+        Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY, 
+            "Starting autoinstall on port " + std::to_string(port));
         
         sensors.push_back(std::make_unique<HealthSensor>("wrist_health", broker, topics::wristbandHealthTopic(), env, port));
         sensors.push_back(std::make_unique<MotionSensor>("wrist_motion", broker, topics::wristbandMotionTopic(), env, port));
@@ -61,13 +62,15 @@ public:
             actuators.push_back(std::make_unique<Speaker>("spk_" + roomName, room, broker, topics::actuatorTopic(room, "speaker"), env, port));
         }
 
-        std::cout << "[House] Autoinstall complete. " << sensors.size() << " sensors and " << actuators.size() << " actuators online.\n";
+        Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Autoinstall complete. " + std::to_string(sensors.size()) + " sensors and " + std::to_string(actuators.size()) + " actuators online.");
     }
 
     void loadScenario(const std::string& filename) {
         std::ifstream file(filename);
         if (!file.is_open()) {
-            std::cerr << "[House] Failed to open scenario file: " << filename << std::endl;
+            Logger::getInstance().logError("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+                "Failed to open scenario file: " + filename);
             return;
         }
         
@@ -77,18 +80,21 @@ public:
                 for (auto& update : scenario["updates"]) {
                     env.writeToTopic(update["topic"], update["data"]);
                 }
-                std::cout << "[House] Scenario '" << scenario.value("name", filename) << "' loaded successfully.\n";
+                Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+                    "Scenario '" + scenario.value("name", filename) + "' loaded successfully.");
             }
         } catch (const std::exception& e) {
-            std::cerr << "[House] JSON Error: " << e.what() << std::endl;
+            Logger::getInstance().logError("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+                std::string("JSON Error: ") + e.what());
         }
     }
 
     void start(int intervalSeconds = 5) {
-
-        std::cout << "[House] Simulation started.\n";
+        Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Simulation started.");
         while (true) {
-            std::cout << "\n--- [House Cycle Update] ---" << std::endl;
+            Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+                "House Cycle Update");
             for (auto& s : sensors) {
                 s->sample(); 
             }

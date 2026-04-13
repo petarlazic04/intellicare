@@ -5,6 +5,7 @@
 #include "../core/EnumTraits.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -15,14 +16,14 @@ class Lock : public Actuator {
     
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            std::cerr << "[Lock] Invalid payload type\n";
+            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Invalid payload type");
             return;
         }
 
         json data = msg.payload.data;
 
         if(!data.contains("actionType")){
-            std::cerr << "[Lock] Missing actionType field\n";
+            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Missing actionType field");
             return;
         }
 
@@ -34,7 +35,7 @@ class Lock : public Actuator {
         } else if (action == DeviceActionType::UNLOCK) {
             shouldBeLocked = false;
         } else {
-            std::cerr << "[Lock] Action not supported\n";
+            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Action not supported");
             return;
         }
 
@@ -46,6 +47,8 @@ class Lock : public Actuator {
         
         environment.writeToTopic(topic, lockState);
 
-        std::cout << "[Lock] Status: " << (shouldBeLocked ? "LOCKED" : "UNLOCKED") << "\n";
+        json metadata = {{"locked", shouldBeLocked}, {"action", to_string_enum<DeviceActionType>(action)}};
+        Logger::getInstance().logActuatorAction(getId(), DeviceType::DOOR_LOCK, getLocation(),
+            "Status: " + std::string(shouldBeLocked ? "LOCKED" : "UNLOCKED"), metadata);
     }
 };

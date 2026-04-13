@@ -5,6 +5,7 @@
 #include "../core/EnumTraits.hpp"
 #include "../../environment/Environment.hpp"
 #include "../../core/Topics.hpp"
+#include "../../core/Logger.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -16,7 +17,7 @@ class Dialer : public Actuator {
   private:
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            std::cerr << "[Dialer] Invalid payload type\n";
+            Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -32,7 +33,7 @@ class Dialer : public Actuator {
             } else if (action == DeviceActionType::NOTIFY_FAMILY) {
                 emergencyType = "FAMILY_NOTIFICATION";
             } else {
-                std::cerr << "[Dialer] Unsupported action\n";
+                Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -46,10 +47,12 @@ class Dialer : public Actuator {
             
             environment.writeToTopic("emergency", emergencyData);
 
-            std::cout << "[Dialer] Emergency triggered: " << emergencyType << "\n";
+            json metadata = {{"emergencyType", emergencyType}, {"location", to_string_enum(getLocation())}, {"action", to_string_enum<DeviceActionType>(action)}};
+            Logger::getInstance().logEmergency(emergencyType, "Emergency triggered: " + emergencyType, metadata);
 
         } catch(const std::exception& e) {
-            std::cerr << "[Dialer] Error: " << e.what() << "\n";
+            Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(),
+                std::string("Error: ") + e.what());
         }
     }
 };

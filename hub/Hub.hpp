@@ -5,6 +5,7 @@
 #include "../core/JSONAdapter.hpp"
 #include "../core/PayloadContracts.hpp"
 #include "../core/Topics.hpp"
+#include "../core/Logger.hpp"
 #include "../mqtt/MQTT.hpp"
 #include "handlers/Handlers.hpp"
 #include <map>
@@ -37,18 +38,22 @@ class Hub{
       setupHandlers();
 
       mqtt.on_message([this](const std::string& topic, const std::string& payload){
-        std::cout << "Hub received message on topic: " << topic << std::endl;
+        Logger::getInstance().logInfo("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Received message on topic: " + topic);
         try{
           Message msg = parseMessage(payload);
-          std::cout << "Parsed message - Device: " << msg.deviceId << ", Type: " << static_cast<int>(msg.payload.payloadType) << std::endl;
+          Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+              "Parsed message - Device: " + msg.deviceId);
           onMessage(msg);
         } catch (const std::exception& e){
-          std::cerr << "Error parsing message:" << e.what() << "\n";
+          Logger::getInstance().logError("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+              std::string("Error parsing message: ") + e.what());
         }
       });
 
       if(!mqtt.connect()){
-        std::cerr << "Failed to connect Hub to MQTT broker\n";
+        Logger::getInstance().logError("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Failed to connect Hub to MQTT broker");
       }
 
       setupSubscriptions();
@@ -80,19 +85,22 @@ class Hub{
 
     void callAmbulance(Room location) {
       std::string topic = topics::dialerTopic();
-      std::cout << "Hub: calling ambulance for " << to_string_enum(location) << " on topic " << topic << std::endl;
+      Logger::getInstance().logEmergency("AMBULANCE", "Calling ambulance for " + to_string_enum(location),
+          {{"location", to_string_enum(location)}, {"topic", topic}});
       sendActuatorCommand(topic, "dialer_main", DeviceActionType::DIAL_AMBULANCE, location, to_string_enum(DialerActionType::DIAL_AMBULANCE));
     }
 
     void callFiremen(Room location) {
       std::string topic = topics::dialerTopic();
-      std::cout << "Hub: calling fire brigade for " << to_string_enum(location) << " on topic " << topic << std::endl;
+      Logger::getInstance().logEmergency("FIRE_BRIGADE", "Calling fire brigade for " + to_string_enum(location),
+          {{"location", to_string_enum(location)}, {"topic", topic}});
       sendActuatorCommand(topic, "dialer_main", DeviceActionType::DIAL_FIRE_BRIGADE, location, to_string_enum(DialerActionType::DIAL_FIRE_BRIGADE));
     }
 
     void notifyFamily(Room location) {
       std::string topic = topics::dialerTopic();
-      std::cout << "Hub: notifying family for " << to_string_enum(location) << " on topic " << topic << std::endl;
+      Logger::getInstance().logEmergency("FAMILY_NOTIFICATION", "Notifying family for " + to_string_enum(location),
+          {{"location", to_string_enum(location)}, {"topic", topic}});
       sendActuatorCommand(topic, "dialer_main", DeviceActionType::NOTIFY_FAMILY, location, to_string_enum(DialerActionType::NOTIFY_FAMILY));
     }
 
@@ -113,7 +121,9 @@ class Hub{
 
     void unlockDoors(Room location) {
       std::string topic = topics::lockTopic();
-      std::cout << "Hub: unlocking the house door for " << to_string_enum(location) << " on topic " << topic << std::endl;
+      Logger::getInstance().logActuatorAction("lock_main", DeviceType::DOOR_LOCK, location,
+          "Unlocking the house door for " + to_string_enum(location),
+          {{"topic", topic}, {"location", to_string_enum(location)}});
       sendActuatorCommand(topic, "lock_main", DeviceActionType::UNLOCK, location);
     }
   
@@ -135,16 +145,19 @@ class Hub{
         json j = json::parse(payload);
         return JSONAdapter::decode(j);
       } catch(const std::exception& e){
-        std::cerr << "Error parsing JSON: " << e.what() << "\n";
+        Logger::getInstance().logError("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            std::string("Error parsing JSON: ") + e.what());
         throw;
       }
     }
 
     void setupSubscriptions(){
       auto sensorTopics = topics::getAllSensorTopics();
-      std::cout << "Hub subscribing to topics:" << std::endl;
+      Logger::getInstance().logInfo("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+          "Hub subscribing to " + std::to_string(sensorTopics.size()) + " topics");
       for (const auto& topic : sensorTopics){
-        std::cout << "  - " << topic << std::endl;
+        Logger::getInstance().logInfo("Hub", DeviceType::FIRE_SENSOR, Room::HALLWAY,
+            "Subscribing to: " + topic);
         mqtt.subscribe(topic, MQTT_DEFAULT_QOS);
       }
     }
@@ -166,11 +179,22 @@ class Hub{
       cmd.timestamp = std::chrono::system_clock::now().time_since_epoch().count();
       cmd.payload = makePayload<DeviceCommand>(DeviceCommand{action, value});
 
-      std::cout << "Hub: sending command " << to_string_enum(action) << " to " << actuatorTopic;
-      if(!value.empty()) std::cout << " value=" << value;
-      std::cout << std::endl;
+      json cmdMetadata = {{"actuatorTopic", actuatorTopic}, {"action", to_string_enum(action)}};
+      if (!value.empty()) cmdMetadata["value"] = value;
+      
+      Logger::getInstance().logActuatorAction(deviceId, getDeviceTypeFromTopic(actuatorTopic), location,
+          "Sending command " + to_string_enum(action), cmdMetadata);
 
       mqtt.publish(actuatorTopic, JSONAdapter::encode(cmd).dump(), MQTT_DEFAULT_QOS);
+    }
+    
+    DeviceType getDeviceTypeFromTopic(const std::string& topic) {
+      if (topic.find("sprinkler") != std::string::npos) return DeviceType::SPRINKLER;
+      if (topic.find("light") != std::string::npos) return DeviceType::LIGHT;
+      if (topic.find("speaker") != std::string::npos) return DeviceType::SPEAKER;
+      if (topic.find("lock") != std::string::npos) return DeviceType::DOOR_LOCK;
+      if (topic.find("dialer") != std::string::npos) return DeviceType::DIALER;
+      return DeviceType::FIRE_SENSOR;
     }
 
 };
@@ -179,61 +203,74 @@ class Hub{
 void handlers::handleHealthPayload(const Message& msg, Hub& hub){
   HealthData healthData = extractPayload<HealthData>(msg.payload);
 
-  std::cout << "Processing health data - HR: " << healthData.heartRate
-            << ", SpO2: " << healthData.spo2
-            << ", Sys: " << healthData.systolic
-            << ", Dia: " << healthData.diastolic << std::endl;
+  json metadata = {{"heartRate", healthData.heartRate}, {"spo2", healthData.spo2},
+                    {"systolic", healthData.systolic}, {"diastolic", healthData.diastolic}};
+  Logger::getInstance().logSensorData(msg.deviceId, msg.deviceType, msg.location,
+      "Processing health data", metadata);
 
   hub.updateVitals(healthData, msg.timestamp);
   hub.updateLocation(msg.location);
 
   if (hazards::isCriticalHealth(healthData)) {
-    std::cout << "Critical health detected in " << to_string_enum(msg.location) << "; unlocking doors and calling ambulance." << std::endl;
+    Logger::getInstance().logHazard("CRITICAL_HEALTH", to_string_enum(msg.location),
+        "Critical health detected; unlocking doors and calling ambulance", metadata);
     hub.unlockDoors(msg.location);
     hub.callAmbulance(msg.location);
   } else {
-    std::cout << "Health data is within normal limits." << std::endl;
+    Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+        "Health data is within normal limits");
   }
 }
 
 void handlers::handleMotionPayload(const Message& msg, Hub& hub){
   MotionData motionData = extractPayload<MotionData>(msg.payload);
 
-  std::cout << "Processing motion data - magnitude: " << motionData.magnitude << std::endl;
+  Logger::getInstance().logSensorData(msg.deviceId, msg.deviceType, msg.location,
+      "Processing motion data", {{"magnitude", motionData.magnitude}});
+  
   if(hazards::isFall(motionData)){
 
     if(!hazards::shouldProcessFall(hub.getLastFallTimestamp(), msg.timestamp)){
-      std::cout << "Fall ignored due to debounce interval." << std::endl;
+      Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+          "Fall ignored due to debounce interval");
       return;
     }
     
     hub.updateLastFallTime(msg.timestamp);
-    std::cout << "Fall detected in " << to_string_enum(hub.getLocation()) << "." << std::endl;
+    Logger::getInstance().logHazard("FALL_DETECTED", to_string_enum(hub.getLocation()),
+        "Fall detected", {{"magnitude", motionData.magnitude}});
     hub.updateLocation(msg.location);
 
     if(hazards::isCriticalHealth(hub.getVitals())){
-      std::cout << "Vitals are critical or stale; unlocking doors and calling ambulance." << std::endl;
+      Logger::getInstance().logEmergency("FALL_WITH_CRITICAL_VITALS",
+          "Vitals are critical or stale; unlocking doors and calling ambulance",
+          {{"location", to_string_enum(hub.getLocation())}});
       hub.unlockDoors(hub.getLocation());
       hub.callAmbulance(hub.getLocation());
     } else {
-      std::cout << "Vitals are stable; notifying family." << std::endl;
+      Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+          "Vitals are stable; notifying family");
       hub.notifyFamily(hub.getLocation());
     }
 
   } else {
-    std::cout << "Motion event not classified as a fall." << std::endl;
+    Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+        "Motion event not classified as a fall");
   }
 }
 
 void handlers::handleFirePayload(const Message& msg, Hub& hub){
   FireDetectorData fireDetectorData = extractPayload<FireDetectorData>(msg.payload);
   
-  std::cout << "Processing fire data - Temp: " << fireDetectorData.temperature 
-            << "°C, Smoke: " << fireDetectorData.smokeLevel 
-            << ", CO: " << fireDetectorData.coLevel << std::endl;
+  json metadata = {{"temperature", fireDetectorData.temperature},
+                    {"smokeLevel", fireDetectorData.smokeLevel},
+                    {"coLevel", fireDetectorData.coLevel}};
+  Logger::getInstance().logSensorData(msg.deviceId, msg.deviceType, msg.location,
+      "Processing fire data", metadata);
 
   if(hazards::isFireHazard(fireDetectorData)){
-    std::cout << "FIRE HAZARD DETECTED! Activating emergency response..." << std::endl;
+    Logger::getInstance().logEmergency("FIRE_HAZARD_DETECTED",
+        "FIRE HAZARD DETECTED! Activating emergency response", metadata);
     hub.updateLocation(msg.location);
 
     hub.unlockDoors(msg.location);
@@ -242,7 +279,8 @@ void handlers::handleFirePayload(const Message& msg, Hub& hub){
     hub.alertSpeakers(msg.location);
     hub.callFiremen(msg.location);
   } else {
-    std::cout << "Fire data received but does not meet hazard thresholds." << std::endl;
+    Logger::getInstance().logInfo(msg.deviceId, msg.deviceType, msg.location,
+        "Fire data received but does not meet hazard thresholds");
   }
 }
 

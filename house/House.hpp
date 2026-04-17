@@ -30,6 +30,14 @@ private:
     
     std::vector<std::unique_ptr<Sensor>> sensors;
     std::vector<std::unique_ptr<Actuator>> actuators;
+    
+    std::string toUppercase(const std::string& str) const {
+        std::string result = str;
+        for (char& c : result) {
+            c = std::toupper(c);
+        }
+        return result;
+    }
 
 public:
     House(const std::string& mqttBroker, int mqttPort = 1883) 
@@ -39,11 +47,11 @@ public:
         Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY, 
             "Starting autoinstall on port " + std::to_string(port));
         
-        sensors.push_back(std::make_unique<HealthSensor>("wrist_health", broker, topics::wristbandHealthTopic(), env, Logger::getInstance(), port));
-        sensors.push_back(std::make_unique<MotionSensor>("wrist_motion", broker, topics::wristbandMotionTopic(), env, Logger::getInstance(), port));
+        sensors.push_back(std::make_unique<HealthSensor>("WRISTBAND_HEALTH", broker, topics::wristbandHealthTopic(), env, Logger::getInstance(), port));
+        sensors.push_back(std::make_unique<MotionSensor>("WRISTBAND_MOTION", broker, topics::wristbandMotionTopic(), env, Logger::getInstance(), port));
         
-        actuators.push_back(std::make_unique<Dialer>("main_dialer", Room::HALLWAY, broker, topics::dialerTopic(), env, Logger::getInstance(), port));
-        actuators.push_back(std::make_unique<Lock>("main_lock", Room::HALLWAY, broker, topics::lockTopic(), env, Logger::getInstance(), port));
+        actuators.push_back(std::make_unique<Dialer>("MAIN_DIALER", Room::HALLWAY, broker, topics::dialerTopic(), env, Logger::getInstance(), port));
+        actuators.push_back(std::make_unique<Lock>("MAIN_LOCK", Room::HALLWAY, broker, topics::lockTopic(), env, Logger::getInstance(), port));
 
         std::vector<Room> rooms = { 
             Room::KITCHEN, Room::LIVING_ROOM, Room::BEDROOM, 
@@ -51,15 +59,15 @@ public:
         };
         
         for (Room room : rooms) {
-            std::string roomName = to_string_enum(room);
+            std::string roomName = toUppercase(to_string_enum(room));
 
-            sensors.push_back(std::make_unique<FireSensor>("fire_" + roomName, room, broker, topics::roomFireTopic(room), env, Logger::getInstance(), port));
-            sensors.push_back(std::make_unique<PIRSensor>("pir_" + roomName, room, broker, topics::roomPIRTopic(room), env, Logger::getInstance(), port));
+            sensors.push_back(std::make_unique<FireSensor>("FIRE_" + roomName, room, broker, topics::roomFireTopic(room), env, Logger::getInstance(), port));
+            sensors.push_back(std::make_unique<PIRSensor>("PIR_" + roomName, room, broker, topics::roomPIRTopic(room), env, Logger::getInstance(), port));
 
-            actuators.push_back(std::make_unique<Sprinkler>("sprink_" + roomName, room, broker, topics::actuatorTopic(room, "sprinkler"), env, Logger::getInstance(), port));
+            actuators.push_back(std::make_unique<Sprinkler>("SPRINKLER_" + roomName, room, broker, topics::actuatorTopic(room, "sprinkler"), env, Logger::getInstance(), port));
 
-            actuators.push_back(std::make_unique<Light>("light_" + roomName, room, broker, topics::actuatorTopic(room, "light"), env, Logger::getInstance(), port));
-            actuators.push_back(std::make_unique<Speaker>("spk_" + roomName, room, broker, topics::actuatorTopic(room, "speaker"), env, Logger::getInstance(), port));
+            actuators.push_back(std::make_unique<Light>("LIGHT_" + roomName, room, broker, topics::actuatorTopic(room, "light"), env, Logger::getInstance(), port));
+            actuators.push_back(std::make_unique<Speaker>("SPEAKER_" + roomName, room, broker, topics::actuatorTopic(room, "speaker"), env, Logger::getInstance(), port));
         }
 
         Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,

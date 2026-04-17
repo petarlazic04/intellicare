@@ -318,7 +318,7 @@ private:
         if (instance != nullptr) {
             if (instance->exportToFile(instance->logFilePath)) {
                 std::cout << " Logs saved to " << instance->logFilePath << std::endl;
-                std::cout << " Number of logs: '" << instance->getLogCount() << std::endl;
+                std::cout << " Number of logs: " << instance->getLogCount() << std::endl;
             } else {
                 std::cout << "Error saving logs" << std::endl;
             }

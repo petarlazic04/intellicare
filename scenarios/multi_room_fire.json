@@ -1,0 +1,34 @@
+{
+  "name": "Multi-Room Fire Spread",
+  "description": "Testing fire detected in multiple rooms simultaneously (worst case scenario)",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 95.0, "smokeLevel": 450.0, "coLevel": 80, "status": "emergency" }
+    },
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 82.0, "smokeLevel": 380.0, "coLevel": 60, "status": "emergency" }
+    },
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 70.0, "smokeLevel": 200.0, "coLevel": 35, "status": "warning" }
+    },
+    {
+      "topic": "sensors/hallway/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 130, "spo2": 88, "systolic": 170, "diastolic": 105, "location": "hallway" }
+    }
+  ]
+}

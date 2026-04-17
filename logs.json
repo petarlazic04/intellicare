@@ -6,8 +6,8 @@
     "logLevel": "INFO",
     "message": "Initializing...",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Environment",
@@ -16,8 +16,8 @@
     "logLevel": "INFO",
     "message": "Initialized",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "House",
@@ -26,8 +26,8 @@
     "logLevel": "INFO",
     "message": "Starting autoinstall on port 1883",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "House",
@@ -36,78 +36,428 @@
     "logLevel": "INFO",
     "message": "Autoinstall complete. 12 sensors and 17 actuators online.",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "Available scenarios:",
+    "message": "========== INTELLICARE TEST SCENARIOS ==========",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "1. Fire emergency",
+    "message": "ORIGINAL SCENARIOS (1-5):",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "2. Health emergency",
+    "message": "  1. Fire emergency",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "3. Fall (vitals stable)",
+    "message": "  2. Health emergency (cardiac)",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "4. Fall (vitals critical)",
+    "message": "  3. Fall (vitals stable)",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "Main",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "5. Global reset",
+    "message": "  4. Fall (vitals critical)",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:11",
-    "unixTimestamp": 1776441851
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  5. Global reset",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "BASELINE (6):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  6. Normal operation",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "FIRE DETECTION (7-11):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  7. Extreme fire temperature",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  8. Smoke only (slow burn)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  9. High CO level",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  10. Multi-room fire spread",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  11. Extreme room temperature (non-fire)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "VITAL SIGNS - CRITICAL LOW (12-15):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  12. Minimum vitals bundle",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  13. Slow heart rate (bradycardia)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  14. Low blood pressure",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  15. Low oxygen saturation",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "VITAL SIGNS - CRITICAL HIGH (16-18):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  16. Maximum vitals bundle",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  17. Rapid heart rate (tachycardia)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  18. High blood pressure",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "BOUNDARY CONDITIONS (19-21):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  19. Oxygen saturation boundaries",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  20. Edge case - normal boundaries",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  21. Asymmetric blood pressure",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "FALL DETECTION (22-24):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  22. Fall with panic response",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  23. Fall immobile + critical vitals",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  24. No motion but high vitals",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "COMPLEX SCENARIOS (25-27):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  25. Fire + Health crisis combined",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  26. Rapid condition change (collapse)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  27. Recovery sequence",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "SENSOR RELIABILITY (28-30):",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  28. False motion detection",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  29. Zero values (sensor failure)",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "  30. Stress test - all sensors active",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
+  },
+  {
+    "deviceId": "Main",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "=============================================",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:17",
+    "unixTimestamp": 1776442277
   },
   {
     "deviceId": "House",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "INFO",
-    "message": "Scenario 'Kitchen Fire Emergency' loaded successfully.",
+    "message": "Scenario 'High Blood Pressure - Hypertensive Crisis' loaded successfully.",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "House",
@@ -116,8 +466,8 @@
     "logLevel": "INFO",
     "message": "Simulation started.",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "House",
@@ -126,8 +476,8 @@
     "logLevel": "INFO",
     "message": "House Cycle Update",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "wrist_health",
@@ -136,18 +486,18 @@
     "logLevel": "SENSOR_DATA",
     "message": "HealthSensor sampled",
     "metadata": {
-      "diastolic": 85,
+      "diastolic": 140,
       "heartRate": 95,
       "spo2": 97,
-      "systolic": 130
+      "systolic": 220
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "wrist_motion",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "BATHROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Independent Wearable MotionSensor sampled",
     "metadata": {
@@ -159,8 +509,8 @@
       "gyroZ": 0.0,
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "fire_KITCHEN",
@@ -169,24 +519,12 @@
     "logLevel": "SENSOR_DATA",
     "message": "FireSensor sampled",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
-  },
-  {
-    "deviceId": "pir_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Motion DETECTED in KITCHEN",
-    "metadata": {
-      "motionDetected": true
-    },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "fire_LIVING_ROOM",
@@ -199,8 +537,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "fire_BEDROOM",
@@ -213,8 +551,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "fire_BATHROOM",
@@ -224,11 +562,23 @@
     "message": "FireSensor sampled",
     "metadata": {
       "coLevel": 0,
-      "smokeLevel": 100.0,
+      "smokeLevel": 0.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "fire_HALLWAY",
@@ -241,8 +591,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:19",
-    "unixTimestamp": 1776441859
+    "timestamp": "2026-04-17 18:11:40",
+    "unixTimestamp": 1776442300
   },
   {
     "deviceId": "House",
@@ -251,8 +601,8 @@
     "logLevel": "INFO",
     "message": "House Cycle Update",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "wrist_health",
@@ -261,18 +611,18 @@
     "logLevel": "SENSOR_DATA",
     "message": "HealthSensor sampled",
     "metadata": {
-      "diastolic": 85,
+      "diastolic": 140,
       "heartRate": 95,
       "spo2": 97,
-      "systolic": 130
+      "systolic": 220
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "wrist_motion",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "BATHROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Independent Wearable MotionSensor sampled",
     "metadata": {
@@ -284,8 +634,8 @@
       "gyroZ": 0.0,
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "fire_KITCHEN",
@@ -294,24 +644,12 @@
     "logLevel": "SENSOR_DATA",
     "message": "FireSensor sampled",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
-  },
-  {
-    "deviceId": "pir_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Motion DETECTED in KITCHEN",
-    "metadata": {
-      "motionDetected": true
-    },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "fire_LIVING_ROOM",
@@ -324,8 +662,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "fire_BEDROOM",
@@ -338,8 +676,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "fire_BATHROOM",
@@ -349,11 +687,23 @@
     "message": "FireSensor sampled",
     "metadata": {
       "coLevel": 0,
-      "smokeLevel": 100.0,
+      "smokeLevel": 0.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "fire_HALLWAY",
@@ -366,8 +716,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:22",
-    "unixTimestamp": 1776441862
+    "timestamp": "2026-04-17 18:11:43",
+    "unixTimestamp": 1776442303
   },
   {
     "deviceId": "House",
@@ -376,8 +726,8 @@
     "logLevel": "INFO",
     "message": "House Cycle Update",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "wrist_health",
@@ -386,18 +736,18 @@
     "logLevel": "SENSOR_DATA",
     "message": "HealthSensor sampled",
     "metadata": {
-      "diastolic": 85,
+      "diastolic": 140,
       "heartRate": 95,
       "spo2": 97,
-      "systolic": 130
+      "systolic": 220
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "wrist_motion",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "BATHROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Independent Wearable MotionSensor sampled",
     "metadata": {
@@ -409,8 +759,8 @@
       "gyroZ": 0.0,
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "fire_KITCHEN",
@@ -419,24 +769,12 @@
     "logLevel": "SENSOR_DATA",
     "message": "FireSensor sampled",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
-  },
-  {
-    "deviceId": "pir_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Motion DETECTED in KITCHEN",
-    "metadata": {
-      "motionDetected": true
-    },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "fire_LIVING_ROOM",
@@ -449,8 +787,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "fire_BEDROOM",
@@ -463,8 +801,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "fire_BATHROOM",
@@ -474,11 +812,23 @@
     "message": "FireSensor sampled",
     "metadata": {
       "coLevel": 0,
-      "smokeLevel": 100.0,
+      "smokeLevel": 0.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "fire_HALLWAY",
@@ -491,8 +841,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:25",
-    "unixTimestamp": 1776441865
+    "timestamp": "2026-04-17 18:11:46",
+    "unixTimestamp": 1776442306
   },
   {
     "deviceId": "House",
@@ -501,8 +851,8 @@
     "logLevel": "INFO",
     "message": "House Cycle Update",
     "metadata": {},
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "wrist_health",
@@ -511,18 +861,18 @@
     "logLevel": "SENSOR_DATA",
     "message": "HealthSensor sampled",
     "metadata": {
-      "diastolic": 85,
+      "diastolic": 140,
       "heartRate": 95,
       "spo2": 97,
-      "systolic": 130
+      "systolic": 220
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "wrist_motion",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "BATHROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Independent Wearable MotionSensor sampled",
     "metadata": {
@@ -534,8 +884,8 @@
       "gyroZ": 0.0,
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "fire_KITCHEN",
@@ -544,24 +894,12 @@
     "logLevel": "SENSOR_DATA",
     "message": "FireSensor sampled",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
-  },
-  {
-    "deviceId": "pir_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Motion DETECTED in KITCHEN",
-    "metadata": {
-      "motionDetected": true
-    },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "fire_LIVING_ROOM",
@@ -574,8 +912,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "fire_BEDROOM",
@@ -588,8 +926,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "fire_BATHROOM",
@@ -599,11 +937,23 @@
     "message": "FireSensor sampled",
     "metadata": {
       "coLevel": 0,
-      "smokeLevel": 100.0,
+      "smokeLevel": 0.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
   },
   {
     "deviceId": "fire_HALLWAY",
@@ -616,7 +966,382 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-17 18:04:28",
-    "unixTimestamp": 1776441868
+    "timestamp": "2026-04-17 18:11:49",
+    "unixTimestamp": 1776442309
+  },
+  {
+    "deviceId": "House",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "House Cycle Update",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "wrist_health",
+    "deviceType": "WRISTBAND",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "HealthSensor sampled",
+    "metadata": {
+      "diastolic": 140,
+      "heartRate": 95,
+      "spo2": 97,
+      "systolic": 220
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "wrist_motion",
+    "deviceType": "WRISTBAND",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Independent Wearable MotionSensor sampled",
+    "metadata": {
+      "accelX": 0.0,
+      "accelY": 0.0,
+      "accelZ": 1.0,
+      "gyroX": 0.0,
+      "gyroY": 0.0,
+      "gyroZ": 0.0,
+      "magnitude": 1.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "fire_KITCHEN",
+    "deviceType": "FIRE_SENSOR",
+    "location": "KITCHEN",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "fire_LIVING_ROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "fire_BEDROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BEDROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "fire_BATHROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 0.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "fire_HALLWAY",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:52",
+    "unixTimestamp": 1776442312
+  },
+  {
+    "deviceId": "House",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "House Cycle Update",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "wrist_health",
+    "deviceType": "WRISTBAND",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "HealthSensor sampled",
+    "metadata": {
+      "diastolic": 140,
+      "heartRate": 95,
+      "spo2": 97,
+      "systolic": 220
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "wrist_motion",
+    "deviceType": "WRISTBAND",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Independent Wearable MotionSensor sampled",
+    "metadata": {
+      "accelX": 0.0,
+      "accelY": 0.0,
+      "accelZ": 1.0,
+      "gyroX": 0.0,
+      "gyroY": 0.0,
+      "gyroZ": 0.0,
+      "magnitude": 1.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "fire_KITCHEN",
+    "deviceType": "FIRE_SENSOR",
+    "location": "KITCHEN",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "fire_LIVING_ROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "fire_BEDROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BEDROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "fire_BATHROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 0.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "fire_HALLWAY",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:55",
+    "unixTimestamp": 1776442315
+  },
+  {
+    "deviceId": "House",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "INFO",
+    "message": "House Cycle Update",
+    "metadata": {},
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "wrist_health",
+    "deviceType": "WRISTBAND",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "HealthSensor sampled",
+    "metadata": {
+      "diastolic": 140,
+      "heartRate": 95,
+      "spo2": 97,
+      "systolic": 220
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "wrist_motion",
+    "deviceType": "WRISTBAND",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Independent Wearable MotionSensor sampled",
+    "metadata": {
+      "accelX": 0.0,
+      "accelY": 0.0,
+      "accelZ": 1.0,
+      "gyroX": 0.0,
+      "gyroY": 0.0,
+      "gyroZ": 0.0,
+      "magnitude": 1.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "fire_KITCHEN",
+    "deviceType": "FIRE_SENSOR",
+    "location": "KITCHEN",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "fire_LIVING_ROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "LIVING_ROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "fire_BEDROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BEDROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "fire_BATHROOM",
+    "deviceType": "FIRE_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 0.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "pir_BATHROOM",
+    "deviceType": "PIR_SENSOR",
+    "location": "BATHROOM",
+    "logLevel": "SENSOR_DATA",
+    "message": "Motion DETECTED in BATHROOM",
+    "metadata": {
+      "motionDetected": true
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
+  },
+  {
+    "deviceId": "fire_HALLWAY",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "SENSOR_DATA",
+    "message": "FireSensor sampled",
+    "metadata": {
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
+    },
+    "timestamp": "2026-04-17 18:11:58",
+    "unixTimestamp": 1776442318
   }
 ]

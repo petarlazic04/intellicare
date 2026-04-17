@@ -1,0 +1,22 @@
+{
+  "name": "Extreme Fire - Very High Temperature",
+  "description": "Testing maximum temperature limit (>120°C) with extreme smoke and CO levels",
+  "updates": [
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 155.8, "smokeLevel": 999.0, "coLevel": 500, "status": "critical" }
+    },
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 120, "spo2": 90, "systolic": 160, "diastolic": 100, "location": "living_room" }
+    },
+    {
+      "topic": "actuators/living_room/light",
+      "data": { "brightness": 0, "lastChanged": 0 }
+    }
+  ]
+}

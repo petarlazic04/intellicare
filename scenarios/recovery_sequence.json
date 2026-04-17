@@ -1,0 +1,26 @@
+{
+  "name": "Recovery Sequence After Emergency",
+  "description": "Testing system behavior when user recovers from critical condition (vitals improving gradually)",
+  "updates": [
+    {
+      "topic": "sensors/bathroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/bathroom/fire",
+      "data": { "temperature": 23.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 92, "spo2": 97, "systolic": 125, "diastolic": 80, "location": "bathroom" }
+    },
+    {
+      "topic": "actuators/bathroom/light",
+      "data": { "brightness": 100, "lastChanged": 1712345678 }
+    },
+    {
+      "topic": "lock",
+      "data": { "locked": false, "lastChanged": 1712345678 }
+    }
+  ]
+}

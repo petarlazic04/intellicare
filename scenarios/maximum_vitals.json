@@ -1,0 +1,18 @@
+{
+  "name": "Maximum Vitals - Critical High",
+  "description": "Testing maximum critical vitals (very high heart rate, low SpO2, high blood pressure)",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 180, "spo2": 85, "systolic": 210, "diastolic": 130, "location": "kitchen" }
+    },
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 22.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

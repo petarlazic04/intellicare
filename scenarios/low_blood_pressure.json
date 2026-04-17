@@ -1,0 +1,18 @@
+{
+  "name": "Low Blood Pressure - Hypotensive",
+  "description": "Testing critical hypotension (SBP <90, DBP <60) indicating shock risk",
+  "updates": [
+    {
+      "topic": "sensors/hallway/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 110, "spo2": 94, "systolic": 78, "diastolic": 42, "location": "hallway" }
+    },
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Abnormal Blood Pressure - Asymmetric",
+  "description": "Testing unusually asymmetric systolic/diastolic ratio indicating measurement error or shock",
+  "updates": [
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 115, "spo2": 93, "systolic": 210, "diastolic": 50, "location": "living_room" }
+    },
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 21.5, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

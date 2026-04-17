@@ -1,0 +1,78 @@
+{
+  "name": "Normal System Operation",
+  "description": "All sensors reading normal values, system in idle state",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 22.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 21.5, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 20.8, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/bathroom/fire",
+      "data": { "temperature": 23.2, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/bathroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/hallway/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 72, "spo2": 98, "systolic": 120, "diastolic": 80, "location": "living_room" }
+    },
+    {
+      "topic": "actuators/kitchen/sprinkler",
+      "data": { "active": false, "lastActivated": 0 }
+    },
+    {
+      "topic": "actuators/living_room/sprinkler",
+      "data": { "active": false, "lastActivated": 0 }
+    },
+    {
+      "topic": "actuators/bedroom/sprinkler",
+      "data": { "active": false, "lastActivated": 0 }
+    },
+    {
+      "topic": "actuators/bathroom/sprinkler",
+      "data": { "active": false, "lastActivated": 0 }
+    },
+    {
+      "topic": "actuators/hallway/sprinkler",
+      "data": { "active": false, "lastActivated": 0 }
+    },
+    {
+      "topic": "lock",
+      "data": { "locked": true, "lastChanged": 0 }
+    },
+    {
+      "topic": "emergency",
+      "data": { "active": false, "type": "", "location": "", "timestamp": 0 }
+    }
+  ]
+}

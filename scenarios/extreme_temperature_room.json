@@ -1,0 +1,22 @@
+{
+  "name": "Extreme Temperature - Non-Fire",
+  "description": "Testing high temperature from non-fire source (HVAC issue, extreme weather)",
+  "updates": [
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 65.0, "smokeLevel": 5.0, "coLevel": 2, "status": "warning" }
+    },
+    {
+      "topic": "sensors/hallway/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 65.0, "smokeLevel": 5.0, "coLevel": 2, "status": "warning" }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 78, "spo2": 97, "systolic": 118, "diastolic": 78, "location": "hallway" }
+    }
+  ]
+}

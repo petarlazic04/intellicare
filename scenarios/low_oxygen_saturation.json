@@ -1,0 +1,18 @@
+{
+  "name": "Low Oxygen Saturation - Respiratory Crisis",
+  "description": "Testing critical low SpO2 levels (<90%) indicating respiratory distress",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 105, "spo2": 78, "systolic": 135, "diastolic": 88, "location": "bedroom" }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

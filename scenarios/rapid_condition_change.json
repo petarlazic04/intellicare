@@ -1,0 +1,39 @@
+{
+  "name": "Rapid Condition Change - Collapse",
+  "description": "Testing sudden transition from normal to critical (stroke/MI scenario)",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 22.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/wristband/motion",
+      "data": { 
+        "accelX": 5.0,
+        "accelY": 4.5,
+        "accelZ": 2.5,
+        "gyroX": 45.0,
+        "gyroY": -35.0,
+        "gyroZ": 20.0,
+        "magnitude": 12.5, 
+        "location": "kitchen",
+        "timestamp": 1712345678 
+      }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { 
+        "heartRate": 55, 
+        "spo2": 80, 
+        "systolic": 95, 
+        "diastolic": 50, 
+        "location": "kitchen",
+        "timestamp": 1712345678 
+      }
+    }
+  ]
+}

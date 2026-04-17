@@ -1,0 +1,18 @@
+{
+  "name": "No Motion but Elevated Vitals",
+  "description": "Testing elevated vitals without motion detection (bedridden person with cardiac issues)",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 140, "spo2": 92, "systolic": 175, "diastolic": 110, "location": "bedroom" }
+    }
+  ]
+}

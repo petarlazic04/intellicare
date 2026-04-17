@@ -1,0 +1,18 @@
+{
+  "name": "High Blood Pressure - Hypertensive Crisis",
+  "description": "Testing stage 3 hypertension (SBP >180, DBP >120) indicating critical condition",
+  "updates": [
+    {
+      "topic": "sensors/bathroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 95, "spo2": 97, "systolic": 220, "diastolic": 140, "location": "bathroom" }
+    },
+    {
+      "topic": "sensors/bathroom/fire",
+      "data": { "temperature": 25.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

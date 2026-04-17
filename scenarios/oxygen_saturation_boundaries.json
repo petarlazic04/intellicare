@@ -1,0 +1,18 @@
+{
+  "name": "Oxygen Saturation Boundaries",
+  "description": "Testing critical SpO2 boundaries (88%-92% range - moderate hypoxemia)",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 98, "spo2": 89, "systolic": 128, "diastolic": 82, "location": "bedroom" }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

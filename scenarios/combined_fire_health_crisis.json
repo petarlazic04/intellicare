@@ -1,0 +1,18 @@
+{
+  "name": "Fire + Health Crisis Combined",
+  "description": "Testing worst case scenario: fire emergency with simultaneous cardiac event",
+  "updates": [
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 105.0, "smokeLevel": 550.0, "coLevel": 150, "status": "emergency" }
+    },
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 170, "spo2": 82, "systolic": 200, "diastolic": 125, "location": "living_room" }
+    }
+  ]
+}

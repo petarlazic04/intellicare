@@ -1,0 +1,50 @@
+{
+  "name": "Stress Test - All Sensors Active",
+  "description": "Testing system performance with all sensors reporting simultaneously",
+  "updates": [
+    {
+      "topic": "sensors/kitchen/fire",
+      "data": { "temperature": 35.0, "smokeLevel": 85.0, "coLevel": 8, "status": "warning" }
+    },
+    {
+      "topic": "sensors/kitchen/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/living_room/fire",
+      "data": { "temperature": 28.5, "smokeLevel": 20.0, "coLevel": 2, "status": "normal" }
+    },
+    {
+      "topic": "sensors/living_room/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 25.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 0 }
+    },
+    {
+      "topic": "sensors/bathroom/fire",
+      "data": { "temperature": 32.0, "smokeLevel": 15.0, "coLevel": 1, "status": "normal" }
+    },
+    {
+      "topic": "sensors/bathroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/hallway/fire",
+      "data": { "temperature": 22.0, "smokeLevel": 5.0, "coLevel": 0, "status": "normal" }
+    },
+    {
+      "topic": "sensors/hallway/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 95, "spo2": 96, "systolic": 135, "diastolic": 88, "location": "kitchen" }
+    }
+  ]
+}

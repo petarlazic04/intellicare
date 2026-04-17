@@ -1,0 +1,18 @@
+{
+  "name": "Minimum Vitals - Critical Low",
+  "description": "Testing minimum critical vitals (very low heart rate, low SpO2, low blood pressure)",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": true, "lastDetected": 1712345678 }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { "heartRate": 35, "spo2": 82, "systolic": 75, "diastolic": 45, "location": "bedroom" }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

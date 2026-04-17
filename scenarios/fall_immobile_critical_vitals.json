@@ -1,0 +1,39 @@
+{
+  "name": "Fall + Immobility + Critical Vitals",
+  "description": "Testing fall with person unable to move and critical low vitals (severe injury)",
+  "updates": [
+    {
+      "topic": "sensors/bedroom/pir",
+      "data": { "motionDetected": false, "lastDetected": 1712345600 }
+    },
+    {
+      "topic": "sensors/wristband/motion",
+      "data": { 
+        "accelX": 0.1,
+        "accelY": 0.05,
+        "accelZ": 9.8,
+        "gyroX": 0.0,
+        "gyroY": 0.0,
+        "gyroZ": 0.0,
+        "magnitude": 9.8, 
+        "location": "bedroom",
+        "timestamp": 1712345678 
+      }
+    },
+    {
+      "topic": "sensors/wristband",
+      "data": { 
+        "heartRate": 42, 
+        "spo2": 88, 
+        "systolic": 88, 
+        "diastolic": 52, 
+        "location": "bedroom",
+        "timestamp": 1712345678 
+      }
+    },
+    {
+      "topic": "sensors/bedroom/fire",
+      "data": { "temperature": 21.0, "smokeLevel": 0.0, "coLevel": 0, "status": "normal" }
+    }
+  ]
+}

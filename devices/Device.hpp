@@ -15,13 +15,14 @@ class Device{
     MQTT mqtt;
     JSONAdapter adapter;
     Environment& environment;
+    Logger& logger;
 
   public:
     Device(const std::string& deviceId, DeviceType deviceType, Room location,
-       const std::string& broker, Environment& env, int port = 1883)
-      :deviceId(deviceId), deviceType(deviceType), location(location), mqtt(broker,port), environment(env){
+       const std::string& broker, Environment& env, Logger& log, int port = 1883)
+      :deviceId(deviceId), deviceType(deviceType), location(location), mqtt(broker,port), environment(env), logger(log){
         if(!mqtt.connect()){
-          Logger::getInstance().logError(deviceId, deviceType, location, "Failed to connect device to broker");
+          logger.logError(deviceId, deviceType, location, "Failed to connect device to broker");
         }
       }
     

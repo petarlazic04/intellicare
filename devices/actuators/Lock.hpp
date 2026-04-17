@@ -11,19 +11,19 @@
 
 class Lock : public Actuator {
   public:
-    Lock(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883):
-    Actuator(deviceId, DeviceType::DOOR_LOCK, location, broker, subscribeTopic, env, port){}
+    Lock(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
+    Actuator(deviceId, DeviceType::DOOR_LOCK, location, broker, subscribeTopic, env, log, port){}
     
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Invalid payload type");
+            logger.logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Invalid payload type");
             return;
         }
 
         json data = msg.payload.data;
 
         if(!data.contains("actionType")){
-            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Missing actionType field");
+            logger.logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Missing actionType field");
             return;
         }
 
@@ -35,7 +35,7 @@ class Lock : public Actuator {
         } else if (action == DeviceActionType::UNLOCK) {
             shouldBeLocked = false;
         } else {
-            Logger::getInstance().logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Action not supported");
+            logger.logError(getId(), DeviceType::DOOR_LOCK, getLocation(), "Action not supported");
             return;
         }
 
@@ -48,7 +48,7 @@ class Lock : public Actuator {
         environment.writeToTopic(topic, lockState);
 
         json metadata = {{"locked", shouldBeLocked}, {"action", to_string_enum<DeviceActionType>(action)}};
-        Logger::getInstance().logActuatorAction(getId(), DeviceType::DOOR_LOCK, getLocation(),
+        logger.logActuatorAction(getId(), DeviceType::DOOR_LOCK, getLocation(),
             "Status: " + std::string(shouldBeLocked ? "LOCKED" : "UNLOCKED"), metadata);
     }
 };

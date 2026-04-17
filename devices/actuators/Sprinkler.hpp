@@ -11,13 +11,13 @@
 
 class Sprinkler : public Actuator {
 public:
-    Sprinkler(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883) :
-        Actuator(deviceId, DeviceType::SPRINKLER, location, broker, subscribeTopic, env, port) {}
+    Sprinkler(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883) :
+        Actuator(deviceId, DeviceType::SPRINKLER, location, broker, subscribeTopic, env, log, port) {}
 
 private:
     void act(const Message& msg) override {
         if (msg.payload.payloadType != PayloadType::COMMAND) {
-            Logger::getInstance().logError(getId(), DeviceType::SPRINKLER, getLocation(), "Invalid payload type");
+            logger.logError(getId(), DeviceType::SPRINKLER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -31,7 +31,7 @@ private:
             } else if (action == DeviceActionType::STOP || action == DeviceActionType::TURN_OFF) {
                 shouldBeActive = false;
             } else {
-                Logger::getInstance().logError(getId(), DeviceType::SPRINKLER, getLocation(), "Unsupported action");
+                logger.logError(getId(), DeviceType::SPRINKLER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -44,7 +44,7 @@ private:
             environment.writeToTopic(topic, sprinklerData);
 
             json metadata = {{"active", shouldBeActive}, {"location", to_string_enum(getLocation())}};
-            Logger::getInstance().logActuatorAction(getId(), DeviceType::SPRINKLER, getLocation(),
+            logger.logActuatorAction(getId(), DeviceType::SPRINKLER, getLocation(),
                 "Status set to " + std::string(shouldBeActive ? "ACTIVE" : "INACTIVE"), metadata);
 
         } catch (const std::exception& e) {

@@ -15,8 +15,8 @@ class MotionSensor : public Sensor {
 public:
     MotionSensor(const std::string& deviceId, 
                  const std::string& broker, const std::string& topic, 
-                 Environment& env, int port = 1883) :
-        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM, broker, topic, env, port) {}
+                 Environment& env, Logger& log, int port = 1883) :
+        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM, broker, topic, env, log, port) {}
 
     void sample() override {
         std::string sensorTopic = topics::wristbandMotionTopic();
@@ -54,7 +54,7 @@ public:
 
         json metadata = {{"accelX", accelX}, {"accelY", accelY}, {"accelZ", accelZ}, 
                          {"gyroX", gyroX}, {"gyroY", gyroY}, {"gyroZ", gyroZ}, {"magnitude", magnitude}};
-        Logger::getInstance().logSensorData(getId(), DeviceType::WRISTBAND, msg.location,
+        logger.logSensorData(getId(), DeviceType::WRISTBAND, msg.location,
             "Independent Wearable MotionSensor sampled", metadata);
         
         publish(msg);

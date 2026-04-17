@@ -60,7 +60,6 @@ public:
     static Logger& getInstance(const std::string& filePath = "logs.json") {
         if (instance == nullptr) {
             instance = new Logger(filePath);
-            // Postavi signal handler za spasavanje logova pri Ctrl+C
             std::signal(SIGINT, Logger::handleSignal);
             std::signal(SIGTERM, Logger::handleSignal);
         }

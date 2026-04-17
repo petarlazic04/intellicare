@@ -11,13 +11,13 @@
 
 class Light : public Actuator {
   public:
-    Light(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883):
-    Actuator(deviceId, DeviceType::LIGHT, location, broker, subscribeTopic, env, port){}
+    Light(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
+    Actuator(deviceId, DeviceType::LIGHT, location, broker, subscribeTopic, env, log, port){}
 
   private:
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            Logger::getInstance().logError(getId(), DeviceType::LIGHT, getLocation(), "Invalid payload type");
+            logger.logError(getId(), DeviceType::LIGHT, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -34,7 +34,7 @@ class Light : public Actuator {
                 newBrightness = std::stoi(data.at("value").get<std::string>());
                 newBrightness = std::max(0, std::min(newBrightness, (int)MAX_LIGHT_BRIGHTNESS));
             } else {
-                Logger::getInstance().logError(getId(), DeviceType::LIGHT, getLocation(), "Unsupported action");
+                logger.logError(getId(), DeviceType::LIGHT, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -47,7 +47,7 @@ class Light : public Actuator {
             environment.writeToTopic(topic, lightData);
 
             json metadata = {{"brightness", newBrightness}, {"location", to_string_enum(getLocation())}};
-            Logger::getInstance().logActuatorAction(getId(), DeviceType::LIGHT, getLocation(),
+            logger.logActuatorAction(getId(), DeviceType::LIGHT, getLocation(),
                 "Brightness set to " + std::to_string(newBrightness), metadata);
 
         } catch(const std::exception& e) {

@@ -11,12 +11,12 @@
 
 class Speaker : public Actuator {
   public:
-    Speaker(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883):
-    Actuator(deviceId, DeviceType::SPEAKER, location, broker, subscribeTopic, env, port){}
+    Speaker(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
+    Actuator(deviceId, DeviceType::SPEAKER, location, broker, subscribeTopic, env, log, port){}
     
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), "Invalid payload type");
+            logger.logError(getId(), DeviceType::SPEAKER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -34,7 +34,7 @@ class Speaker : public Actuator {
                 newVolume = std::stoi(data.at("value").get<std::string>());
                 newVolume = std::max(0, std::min(newVolume, (int)MAX_SPEAKER_VOLUME));
             } else {
-                Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), "Unsupported action");
+                logger.logError(getId(), DeviceType::SPEAKER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -47,10 +47,10 @@ class Speaker : public Actuator {
             environment.writeToTopic(topic, speakerData);
 
             json metadata = {{"volume", newVolume}, {"action", to_string_enum<DeviceActionType>(action)}, {"location", to_string_enum(getLocation())}};
-            Logger::getInstance().logActuatorAction(getId(), DeviceType::SPEAKER, getLocation(),
+            logger.logActuatorAction(getId(), DeviceType::SPEAKER, getLocation(),
                 "Volume set to " + std::to_string(newVolume) + ", action: " + to_string_enum<DeviceActionType>(action), metadata);
         } catch(const std::exception& e) {
-            Logger::getInstance().logError(getId(), DeviceType::SPEAKER, getLocation(), 
+            logger.logError(getId(), DeviceType::SPEAKER, getLocation(), 
                 std::string("Error: ") + e.what());
         }
     }

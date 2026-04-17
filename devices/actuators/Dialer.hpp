@@ -11,13 +11,13 @@
 
 class Dialer : public Actuator {
   public:
-    Dialer(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, int port = 1883):
-    Actuator(deviceId, DeviceType::DIALER, location, broker, subscribeTopic, env, port){}
+    Dialer(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
+    Actuator(deviceId, DeviceType::DIALER, location, broker, subscribeTopic, env, log, port){}
 
   private:
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){
-            Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(), "Invalid payload type");
+            logger.logError(getId(), DeviceType::DIALER, getLocation(), "Invalid payload type");
             return;
         }
 
@@ -33,7 +33,7 @@ class Dialer : public Actuator {
             } else if (action == DeviceActionType::NOTIFY_FAMILY) {
                 emergencyType = "FAMILY_NOTIFICATION";
             } else {
-                Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(), "Unsupported action");
+                logger.logError(getId(), DeviceType::DIALER, getLocation(), "Unsupported action");
                 return;
             }
 
@@ -48,10 +48,10 @@ class Dialer : public Actuator {
             environment.writeToTopic("emergency", emergencyData);
 
             json metadata = {{"emergencyType", emergencyType}, {"location", to_string_enum(getLocation())}, {"action", to_string_enum<DeviceActionType>(action)}};
-            Logger::getInstance().logEmergency(emergencyType, "Emergency triggered: " + emergencyType, metadata);
+            logger.logEmergency(emergencyType, "Emergency triggered: " + emergencyType, metadata);
 
         } catch(const std::exception& e) {
-            Logger::getInstance().logError(getId(), DeviceType::DIALER, getLocation(),
+            logger.logError(getId(), DeviceType::DIALER, getLocation(),
                 std::string("Error: ") + e.what());
         }
     }

@@ -16,8 +16,8 @@ class Sensor : public Device{
   public:
   
   Sensor(const std::string& deviceId, DeviceType deviceType, Room location,
-     const std::string& broker, const std::string& topic, Environment& env, int port = 1883):
-    Device(deviceId,deviceType,location,broker,env,port), publishTopic(topic){
+     const std::string& broker, const std::string& topic, Environment& env, Logger& log, int port = 1883):
+    Device(deviceId,deviceType,location,broker,env,log,port), publishTopic(topic){
       onConnect();
     }
   

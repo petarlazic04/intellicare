@@ -14,8 +14,8 @@ class PIRSensor : public Sensor {
 public:
     PIRSensor(const std::string& deviceId, Room location,
               const std::string& broker, const std::string& topic, 
-              Environment& env, int port = 1883) :
-        Sensor(deviceId, DeviceType::PIR_SENSOR, location, broker, topic, env, port) {}
+              Environment& env, Logger& log, int port = 1883) :
+        Sensor(deviceId, DeviceType::PIR_SENSOR, location, broker, topic, env, log, port) {}
 
     void sample() override {
         // 1. Get the room-specific topic: e.g., "sensors/kitchen/pir"
@@ -39,7 +39,7 @@ public:
         };
 
         if (motionDetected) {
-            Logger::getInstance().logSensorData(getId(), DeviceType::PIR_SENSOR, getLocation(),
+            logger.logSensorData(getId(), DeviceType::PIR_SENSOR, getLocation(),
                 "Motion DETECTED in " + to_string_enum(getLocation()), {{"motionDetected", true}});
         }
         

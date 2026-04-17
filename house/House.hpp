@@ -39,11 +39,11 @@ public:
         Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY, 
             "Starting autoinstall on port " + std::to_string(port));
         
-        sensors.push_back(std::make_unique<HealthSensor>("wrist_health", broker, topics::wristbandHealthTopic(), env, port));
-        sensors.push_back(std::make_unique<MotionSensor>("wrist_motion", broker, topics::wristbandMotionTopic(), env, port));
+        sensors.push_back(std::make_unique<HealthSensor>("wrist_health", broker, topics::wristbandHealthTopic(), env, Logger::getInstance(), port));
+        sensors.push_back(std::make_unique<MotionSensor>("wrist_motion", broker, topics::wristbandMotionTopic(), env, Logger::getInstance(), port));
         
-        actuators.push_back(std::make_unique<Dialer>("main_dialer", Room::HALLWAY, broker, topics::dialerTopic(), env, port));
-        actuators.push_back(std::make_unique<Lock>("main_lock", Room::HALLWAY, broker, topics::lockTopic(), env, port));
+        actuators.push_back(std::make_unique<Dialer>("main_dialer", Room::HALLWAY, broker, topics::dialerTopic(), env, Logger::getInstance(), port));
+        actuators.push_back(std::make_unique<Lock>("main_lock", Room::HALLWAY, broker, topics::lockTopic(), env, Logger::getInstance(), port));
 
         std::vector<Room> rooms = { 
             Room::KITCHEN, Room::LIVING_ROOM, Room::BEDROOM, 
@@ -53,13 +53,13 @@ public:
         for (Room room : rooms) {
             std::string roomName = to_string_enum(room);
 
-            sensors.push_back(std::make_unique<FireSensor>("fire_" + roomName, room, broker, topics::roomFireTopic(room), env, port));
-            sensors.push_back(std::make_unique<PIRSensor>("pir_" + roomName, room, broker, topics::roomPIRTopic(room), env, port));
+            sensors.push_back(std::make_unique<FireSensor>("fire_" + roomName, room, broker, topics::roomFireTopic(room), env, Logger::getInstance(), port));
+            sensors.push_back(std::make_unique<PIRSensor>("pir_" + roomName, room, broker, topics::roomPIRTopic(room), env, Logger::getInstance(), port));
 
-            actuators.push_back(std::make_unique<Sprinkler>("sprink_" + roomName, room, broker, topics::actuatorTopic(room, "sprinkler"), env, port));
+            actuators.push_back(std::make_unique<Sprinkler>("sprink_" + roomName, room, broker, topics::actuatorTopic(room, "sprinkler"), env, Logger::getInstance(), port));
 
-            actuators.push_back(std::make_unique<Light>("light_" + roomName, room, broker, topics::actuatorTopic(room, "light"), env, port));
-            actuators.push_back(std::make_unique<Speaker>("spk_" + roomName, room, broker, topics::actuatorTopic(room, "speaker"), env, port));
+            actuators.push_back(std::make_unique<Light>("light_" + roomName, room, broker, topics::actuatorTopic(room, "light"), env, Logger::getInstance(), port));
+            actuators.push_back(std::make_unique<Speaker>("spk_" + roomName, room, broker, topics::actuatorTopic(room, "speaker"), env, Logger::getInstance(), port));
         }
 
         Logger::getInstance().logInfo("House", DeviceType::FIRE_SENSOR, Room::HALLWAY,

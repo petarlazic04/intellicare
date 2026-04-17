@@ -13,8 +13,8 @@
 class HealthSensor : public Sensor {
 public:
     HealthSensor(const std::string& deviceId, const std::string& broker, const std::string& topic, 
-                 Environment& env, int port = 1883) :
-        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM , broker, topic, env, port) {}
+                 Environment& env, Logger& log, int port = 1883) :
+        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM , broker, topic, env, log, port) {}
 
     void sample() override {
         std::string sensorTopic = topics::wristbandHealthTopic();
@@ -40,7 +40,7 @@ public:
         };
 
         json metadata = {{"heartRate", heartrate}, {"spo2", spo2}, {"systolic", systolic}, {"diastolic", diastolic}};
-        Logger::getInstance().logSensorData(getId(), DeviceType::WRISTBAND, getLocation(), 
+        logger.logSensorData(getId(), DeviceType::WRISTBAND, getLocation(), 
             "HealthSensor sampled", metadata);
         
         publish(msg);

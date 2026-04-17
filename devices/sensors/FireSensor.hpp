@@ -14,8 +14,8 @@ class FireSensor : public Sensor {
 public:
     FireSensor(const std::string& deviceId, Room location,
                const std::string& broker, const std::string& topic, 
-               Environment& env, int port = 1883) :
-        Sensor(deviceId, DeviceType::FIRE_SENSOR, location, broker, topic, env, port) {}
+               Environment& env, Logger& log, int port = 1883) :
+        Sensor(deviceId, DeviceType::FIRE_SENSOR, location, broker, topic, env, log, port) {}
 
     void sample() override {
         std::string sensorTopic = topics::roomFireTopic(getLocation());
@@ -39,7 +39,7 @@ public:
         };
 
         json metadata = {{"temperature", temperature}, {"smokeLevel", smokeLevel}, {"coLevel", coLevel}};
-        Logger::getInstance().logSensorData(getId(), DeviceType::FIRE_SENSOR, getLocation(),
+        logger.logSensorData(getId(), DeviceType::FIRE_SENSOR, getLocation(),
             "FireSensor sampled", metadata);
         
         publish(msg);

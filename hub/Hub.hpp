@@ -7,6 +7,7 @@
 #include "../core/Topics.hpp"
 #include "../core/Logger.hpp"
 #include "../mqtt/MQTT.hpp"
+#include "../ssdp/DeviceRegistry.hpp"
 #include "handlers/Handlers.hpp"
 #include <map>
 #include <chrono>
@@ -18,10 +19,12 @@ class Hub{
   private:
     Room currentLocation;
     MQTT mqtt;
+    DeviceRegistry registry;
     long lastFallTimestamp;
     long lastVitalsTimestamp;
     long lastPIRMotionTime;
     HealthData vitals;
+
 
     using Handler = std::function<void(const Message &msg, Hub&)>;
     std::map<PayloadType, Handler> handlers;
@@ -29,11 +32,11 @@ class Hub{
 
   public:
 
-    Hub(const std::string& broker, int port): 
+    Hub(const std::string& broker, int port, SSDPConfig config): 
       mqtt(broker,port),
       currentLocation(Room::LIVING_ROOM),
       lastVitalsTimestamp(0),
-      lastPIRMotionTime(0){
+      lastPIRMotionTime(0), registry(config){
 
       setupHandlers();
 
@@ -122,7 +125,7 @@ class Hub{
     void unlockDoors(Room location) {
       std::string topic = topics::lockTopic();
       Logger::getInstance().logActuatorAction("lock_main", DeviceType::DOOR_LOCK, location,
-          "Unlocking the house door for " + to_string_enum(location),
+          "Unlocking the house door ",
           {{"topic", topic}, {"location", to_string_enum(location)}});
       sendActuatorCommand(topic, "lock_main", DeviceActionType::UNLOCK, location);
     }

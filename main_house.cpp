@@ -3,8 +3,16 @@
 #include <vector>
 #include <vector>
 
+
+
 int main() {
-    House myHouse("localhost", 1883); 
+
+    SSDPConfig config;
+    config.multicastGroup = "239.255.255.250"; // Standard SSDP Group
+    config.port           = 1900;              // Standard SSDP Port
+    config.interval       = 30;                // Send "alive" every 30s
+    config.ttl            = 2;                 // Hops (limit to local network)
+    House myHouse("localhost", 1883, config); 
     
     std::vector<std::string> scenarios = {
         // Original scenarios

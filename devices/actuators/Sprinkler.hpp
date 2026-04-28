@@ -11,8 +11,8 @@
 
 class Sprinkler : public Actuator {
 public:
-    Sprinkler(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883) :
-        Actuator(deviceId, DeviceType::SPRINKLER, location, broker, subscribeTopic, env, log, port) {}
+    Sprinkler(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}) :
+        Actuator(deviceId, DeviceType::SPRINKLER, location, broker, subscribeTopic, env, log, port, config) {}
 
 private:
     void act(const Message& msg) override {

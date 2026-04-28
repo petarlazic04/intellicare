@@ -13,8 +13,8 @@
 class HealthSensor : public Sensor {
 public:
     HealthSensor(const std::string& deviceId, const std::string& broker, const std::string& topic, 
-                 Environment& env, Logger& log, int port = 1883) :
-        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM , broker, topic, env, log, port) {}
+                 Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}) :
+        Sensor(deviceId, DeviceType::WRISTBAND, Room::LIVING_ROOM , broker, topic, env, log, port,config) {}
 
     void sample() override {
         std::string sensorTopic = topics::wristbandHealthTopic();

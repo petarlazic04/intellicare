@@ -120,6 +120,7 @@ struct DeviceCommand {
 };
 
 
+
 struct Payload {
   PayloadType payloadType;
   json data;
@@ -142,3 +143,17 @@ struct Message {
   Payload payload;
 };
 
+
+struct SSDPConfig {
+  std::string multicastGroup = "239.255.255.250";
+  int port = 1900;
+  int interval = 30;
+  int ttl = 2;
+};
+
+struct RemoteDevice {
+    std::string id;
+    DeviceType type;
+    Room location;
+    std::chrono::steady_clock::time_point lastSeen;
+};

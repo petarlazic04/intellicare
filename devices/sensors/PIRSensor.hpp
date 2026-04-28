@@ -14,8 +14,8 @@ class PIRSensor : public Sensor {
 public:
     PIRSensor(const std::string& deviceId, Room location,
               const std::string& broker, const std::string& topic, 
-              Environment& env, Logger& log, int port = 1883) :
-        Sensor(deviceId, DeviceType::PIR_SENSOR, location, broker, topic, env, log, port) {}
+              Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}) :
+        Sensor(deviceId, DeviceType::PIR_SENSOR, location, broker, topic, env, log, port, config) {}
 
     void sample() override {
         // 1. Get the room-specific topic: e.g., "sensors/kitchen/pir"

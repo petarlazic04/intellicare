@@ -11,8 +11,8 @@
 
 class Dialer : public Actuator {
   public:
-    Dialer(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
-    Actuator(deviceId, DeviceType::DIALER, location, broker, subscribeTopic, env, log, port){}
+    Dialer(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}):
+    Actuator(deviceId, DeviceType::DIALER, location, broker, subscribeTopic, env, log, port, config){}
 
   private:
     void act(const Message& msg) override {

@@ -18,7 +18,7 @@ private:
     json houseData;
     mutable std::mutex dataMutex;
 
-    Environment() {
+    Environment()  {
         Logger::getInstance().logInfo("Environment", DeviceType::FIRE_SENSOR, Room::HALLWAY,
             "Initializing...");
         

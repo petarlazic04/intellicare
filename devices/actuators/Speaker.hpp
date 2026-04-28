@@ -11,8 +11,8 @@
 
 class Speaker : public Actuator {
   public:
-    Speaker(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
-    Actuator(deviceId, DeviceType::SPEAKER, location, broker, subscribeTopic, env, log, port){}
+    Speaker(const std::string& deviceId, Room location, const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}):
+    Actuator(deviceId, DeviceType::SPEAKER, location, broker, subscribeTopic, env, log, port, config){}
     
     void act(const Message& msg) override {
         if(msg.payload.payloadType != PayloadType::COMMAND){

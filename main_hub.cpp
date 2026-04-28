@@ -6,9 +6,14 @@
 #include <chrono>
 
 int main() {
-    // Everything happens in the constructor: 
-    // Connects, Subscribes, and sets up Message Handlers
-    Hub smartHub("localhost", 1883);
+
+    SSDPConfig config;
+    config.multicastGroup = "239.255.255.250"; // Standard SSDP Group
+    config.port           = 1900;              // Standard SSDP Port
+    config.interval       = 30;                // Send "alive" every 30s
+    config.ttl            = 2;                 // Hops (limit to local network)
+
+    Hub smartHub("localhost", 1883, config);
 
     Logger::getInstance().logInfo("Main", DeviceType::FIRE_SENSOR, Room::HALLWAY,
         "Hub is running. Monitoring for emergencies...");

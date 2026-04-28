@@ -15,8 +15,8 @@ class Actuator : public Device{
   public:
   
   Actuator(const std::string& deviceId, DeviceType deviceType, Room location,
-     const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883):
-    Device(deviceId,deviceType,location,broker,env,log,port), subscribeTopic(subscribeTopic){
+     const std::string& broker, const std::string& subscribeTopic, Environment& env, Logger& log, int port = 1883, SSDPConfig config = {}):
+    Device(deviceId,deviceType,location,broker,env,log,port, config), subscribeTopic(subscribeTopic){
       mqtt.on_message([this](const std::string& topic, const std::string& msg){
         handle_message(topic,msg);
       });

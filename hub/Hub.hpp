@@ -88,46 +88,46 @@ class Hub{
 
     void callAmbulance(Room location) {
       std::string topic = topics::dialerTopic();
-      Logger::getInstance().logEmergency("AMBULANCE", "Calling ambulance for " + to_string_enum(location),
+      Logger::getInstance().logEmergency("AMBULANCE", "CALLING AMBULANCE FOR " + to_string_enum(location),
           {{"location", to_string_enum(location)}, {"topic", topic}});
-      sendActuatorCommand(topic, "dialer_main", DeviceActionType::DIAL_AMBULANCE, location, to_string_enum(DialerActionType::DIAL_AMBULANCE));
+      sendActuatorCommand(topic, "DIALER_MAIN", DeviceActionType::DIAL_AMBULANCE, location, to_string_enum(DialerActionType::DIAL_AMBULANCE));
     }
 
     void callFiremen(Room location) {
       std::string topic = topics::dialerTopic();
-      Logger::getInstance().logEmergency("FIRE_BRIGADE", "Calling fire brigade for " + to_string_enum(location),
+      Logger::getInstance().logEmergency("FIRE_BRIGADE", "CALLING FIRE BRIGADE FOR " + to_string_enum(location),
           {{"location", to_string_enum(location)}, {"topic", topic}});
-      sendActuatorCommand(topic, "dialer_main", DeviceActionType::DIAL_FIRE_BRIGADE, location, to_string_enum(DialerActionType::DIAL_FIRE_BRIGADE));
+      sendActuatorCommand(topic, "DIALER_MAIN", DeviceActionType::DIAL_FIRE_BRIGADE, location, to_string_enum(DialerActionType::DIAL_FIRE_BRIGADE));
     }
 
     void notifyFamily(Room location) {
       std::string topic = topics::dialerTopic();
-      Logger::getInstance().logEmergency("FAMILY_NOTIFICATION", "Notifying family for " + to_string_enum(location),
+      Logger::getInstance().logEmergency("FAMILY_NOTIFICATION", "NOTIFYING FAMILY FOR " + to_string_enum(location),
           {{"location", to_string_enum(location)}, {"topic", topic}});
-      sendActuatorCommand(topic, "dialer_main", DeviceActionType::NOTIFY_FAMILY, location, to_string_enum(DialerActionType::NOTIFY_FAMILY));
+      sendActuatorCommand(topic, "DIALER_MAIN", DeviceActionType::NOTIFY_FAMILY, location, to_string_enum(DialerActionType::NOTIFY_FAMILY));
     }
 
     void activateSprinklers(Room location) {
       std::string topic = topics::actuatorTopic(location, "sprinkler");
-      sendActuatorCommand(topic, "sprinkler_" + to_string_enum(location), DeviceActionType::START, location);
+      sendActuatorCommand(topic, "SPRINKLER_" + to_string_enum(location), DeviceActionType::START, location);
     }
 
     void alertLights(Room location) {
       std::string topic = topics::actuatorTopic(location, "light");
-      sendActuatorCommand(topic, "light_" + to_string_enum(location), DeviceActionType::TURN_ON, location);
+      sendActuatorCommand(topic, "LIGHT_" + to_string_enum(location), DeviceActionType::TURN_ON, location);
     }
 
     void alertSpeakers(Room location) {
       std::string topic = topics::actuatorTopic(location, "speaker");
-      sendActuatorCommand(topic, "speaker_" + to_string_enum(location), DeviceActionType::TURN_ON, location, "100");
+      sendActuatorCommand(topic, "SPEAKER_" + to_string_enum(location), DeviceActionType::TURN_ON, location, "100");
     }
 
     void unlockDoors(Room location) {
       std::string topic = topics::lockTopic();
-      Logger::getInstance().logActuatorAction("lock_main", DeviceType::DOOR_LOCK, location,
-          "Unlocking the house door ",
+      Logger::getInstance().logActuatorAction("LOCK_MAIN", DeviceType::DOOR_LOCK, location,
+          "UNLOCKING THE HOUSE DOOR",
           {{"topic", topic}, {"location", to_string_enum(location)}});
-      sendActuatorCommand(topic, "lock_main", DeviceActionType::UNLOCK, location);
+      sendActuatorCommand(topic, "LOCK_MAIN", DeviceActionType::UNLOCK, location);
     }
   
   private:

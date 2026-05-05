@@ -6,8 +6,8 @@
     "logLevel": "INFO",
     "message": "Hub subscribing to 12 topics",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -16,8 +16,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/wristband/motion",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -26,8 +26,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/wristband/health",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -36,8 +36,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/kitchen/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -46,8 +46,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/kitchen/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -56,8 +56,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/living_room/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -66,8 +66,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/living_room/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -76,8 +76,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/bedroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -86,8 +86,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/bedroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -96,8 +96,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/bathroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -106,8 +106,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/bathroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -116,8 +116,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/hallway/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -126,8 +126,8 @@
     "logLevel": "INFO",
     "message": "Subscribing to: sensors/hallway/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Main",
@@ -136,8 +136,8 @@
     "logLevel": "INFO",
     "message": "Hub is running. Monitoring for emergencies...",
     "metadata": {},
-    "timestamp": "2026-04-28 19:05:55",
-    "unixTimestamp": 1777395955
+    "timestamp": "2026-05-05 08:04:32",
+    "unixTimestamp": 1777961072
   },
   {
     "deviceId": "Hub",
@@ -146,8 +146,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/health",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -156,8 +156,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_HEALTH",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -166,13 +166,13 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing health data",
     "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
+      "diastolic": 100,
+      "heartRate": 120,
+      "spo2": 90,
+      "systolic": 160
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -181,8 +181,8 @@
     "logLevel": "INFO",
     "message": "Health data is within normal limits",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -191,40 +191,40 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/motion",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_MOTION",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Processing motion data",
     "metadata": {
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Motion event not classified as a fall",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -233,8 +233,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -243,8 +243,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -253,119 +253,22 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
-    "deviceId": "FIRE_HAZARD_DETECTED",
+    "deviceId": "FIRE_KITCHEN",
     "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
     "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "logLevel": "INFO",
+    "message": "Fire data received but does not meet hazard thresholds",
+    "metadata": {},
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -374,8 +277,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "PIR_KITCHEN",
@@ -384,8 +287,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -394,8 +297,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -404,8 +307,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -414,22 +317,119 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
-    "deviceId": "FIRE_LIVING_ROOM",
+    "deviceId": "FIRE_HAZARD_DETECTED",
     "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "EMERGENCY",
+    "message": "FIRE HAZARD DETECTED! Activating emergency response",
+    "metadata": {
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "LOCK_MAIN",
+    "deviceType": "DOOR_LOCK",
     "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "UNLOCKING THE HOUSE DOOR",
+    "metadata": {
+      "location": "LIVING_ROOM",
+      "topic": "actuators/lock"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "LOCK_MAIN",
+    "deviceType": "DOOR_LOCK",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command UNLOCK",
+    "metadata": {
+      "action": "UNLOCK",
+      "actuatorTopic": "actuators/lock"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "SPRINKLER_LIVING_ROOM",
+    "deviceType": "SPRINKLER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command START",
+    "metadata": {
+      "action": "START",
+      "actuatorTopic": "actuators/living_room/sprinkler"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "LIGHT_LIVING_ROOM",
+    "deviceType": "LIGHT",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command TURN_ON",
+    "metadata": {
+      "action": "TURN_ON",
+      "actuatorTopic": "actuators/living_room/light"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "SPEAKER_LIVING_ROOM",
+    "deviceType": "SPEAKER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command TURN_ON",
+    "metadata": {
+      "action": "TURN_ON",
+      "actuatorTopic": "actuators/living_room/speaker",
+      "value": "100"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "FIRE_BRIGADE",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "EMERGENCY",
+    "message": "CALLING FIRE BRIGADE FOR LIVING_ROOM",
+    "metadata": {
+      "location": "LIVING_ROOM",
+      "topic": "actuators/dialer"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
+  },
+  {
+    "deviceId": "DIALER_MAIN",
+    "deviceType": "DIALER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command DIAL_FIRE_BRIGADE",
+    "metadata": {
+      "action": "DIAL_FIRE_BRIGADE",
+      "actuatorTopic": "actuators/dialer",
+      "value": "DIAL_FIRE_BRIGADE"
+    },
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -438,8 +438,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "PIR_LIVING_ROOM",
@@ -448,8 +448,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -458,8 +458,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -468,8 +468,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -482,8 +482,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -492,8 +492,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -502,8 +502,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "PIR_BEDROOM",
@@ -512,8 +512,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -522,8 +522,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -532,8 +532,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -546,8 +546,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -556,8 +556,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -566,8 +566,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "PIR_BATHROOM",
@@ -576,8 +576,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -586,8 +586,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -596,8 +596,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -610,8 +610,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -620,8 +620,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -630,8 +630,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "PIR_HALLWAY",
@@ -640,8 +640,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:24",
-    "unixTimestamp": 1777395984
+    "timestamp": "2026-05-05 08:04:40",
+    "unixTimestamp": 1777961080
   },
   {
     "deviceId": "Hub",
@@ -650,8 +650,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/health",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -660,8 +660,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_HEALTH",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -670,13 +670,13 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing health data",
     "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
+      "diastolic": 100,
+      "heartRate": 120,
+      "spo2": 90,
+      "systolic": 160
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -685,8 +685,8 @@
     "logLevel": "INFO",
     "message": "Health data is within normal limits",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -695,40 +695,40 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/motion",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_MOTION",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Processing motion data",
     "metadata": {
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Motion event not classified as a fall",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -737,8 +737,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -747,8 +747,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -757,119 +757,22 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
-    "deviceId": "FIRE_HAZARD_DETECTED",
+    "deviceId": "FIRE_KITCHEN",
     "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
     "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "logLevel": "INFO",
+    "message": "Fire data received but does not meet hazard thresholds",
+    "metadata": {},
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -878,8 +781,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "PIR_KITCHEN",
@@ -888,8 +791,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -898,8 +801,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -908,8 +811,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -918,22 +821,119 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
-    "deviceId": "FIRE_LIVING_ROOM",
+    "deviceId": "FIRE_HAZARD_DETECTED",
     "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "EMERGENCY",
+    "message": "FIRE HAZARD DETECTED! Activating emergency response",
+    "metadata": {
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "LOCK_MAIN",
+    "deviceType": "DOOR_LOCK",
     "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "UNLOCKING THE HOUSE DOOR",
+    "metadata": {
+      "location": "LIVING_ROOM",
+      "topic": "actuators/lock"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "LOCK_MAIN",
+    "deviceType": "DOOR_LOCK",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command UNLOCK",
+    "metadata": {
+      "action": "UNLOCK",
+      "actuatorTopic": "actuators/lock"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "SPRINKLER_LIVING_ROOM",
+    "deviceType": "SPRINKLER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command START",
+    "metadata": {
+      "action": "START",
+      "actuatorTopic": "actuators/living_room/sprinkler"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "LIGHT_LIVING_ROOM",
+    "deviceType": "LIGHT",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command TURN_ON",
+    "metadata": {
+      "action": "TURN_ON",
+      "actuatorTopic": "actuators/living_room/light"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "SPEAKER_LIVING_ROOM",
+    "deviceType": "SPEAKER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command TURN_ON",
+    "metadata": {
+      "action": "TURN_ON",
+      "actuatorTopic": "actuators/living_room/speaker",
+      "value": "100"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "FIRE_BRIGADE",
+    "deviceType": "FIRE_SENSOR",
+    "location": "HALLWAY",
+    "logLevel": "EMERGENCY",
+    "message": "CALLING FIRE BRIGADE FOR LIVING_ROOM",
+    "metadata": {
+      "location": "LIVING_ROOM",
+      "topic": "actuators/dialer"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
+  },
+  {
+    "deviceId": "DIALER_MAIN",
+    "deviceType": "DIALER",
+    "location": "LIVING_ROOM",
+    "logLevel": "ACTUATOR_ACTION",
+    "message": "Sending command DIAL_FIRE_BRIGADE",
+    "metadata": {
+      "action": "DIAL_FIRE_BRIGADE",
+      "actuatorTopic": "actuators/dialer",
+      "value": "DIAL_FIRE_BRIGADE"
+    },
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -942,8 +942,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "PIR_LIVING_ROOM",
@@ -952,8 +952,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -962,8 +962,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -972,8 +972,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -986,8 +986,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -996,8 +996,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1006,8 +1006,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "PIR_BEDROOM",
@@ -1016,8 +1016,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1026,8 +1026,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -1036,8 +1036,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -1050,8 +1050,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -1060,8 +1060,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1070,8 +1070,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "PIR_BATHROOM",
@@ -1080,8 +1080,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1090,8 +1090,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -1100,8 +1100,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -1114,8 +1114,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -1124,8 +1124,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1134,8 +1134,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "PIR_HALLWAY",
@@ -1144,8 +1144,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:27",
-    "unixTimestamp": 1777395987
+    "timestamp": "2026-05-05 08:04:43",
+    "unixTimestamp": 1777961083
   },
   {
     "deviceId": "Hub",
@@ -1154,8 +1154,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/health",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -1164,8 +1164,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_HEALTH",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -1174,13 +1174,13 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing health data",
     "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
+      "diastolic": 100,
+      "heartRate": 120,
+      "spo2": 90,
+      "systolic": 160
     },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_HEALTH",
@@ -1189,8 +1189,8 @@
     "logLevel": "INFO",
     "message": "Health data is within normal limits",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1199,40 +1199,40 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/wristband/motion",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Parsed message - Device: WRISTBAND_MOTION",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "SENSOR_DATA",
     "message": "Processing motion data",
     "metadata": {
       "magnitude": 1.0
     },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "WRISTBAND_MOTION",
     "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "INFO",
     "message": "Motion event not classified as a fall",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1241,8 +1241,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -1251,8 +1251,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_KITCHEN",
@@ -1261,119 +1261,22 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 0,
+      "smokeLevel": 100.0,
+      "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "FIRE_HAZARD_DETECTED",
+    "deviceId": "FIRE_KITCHEN",
     "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
     "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "logLevel": "INFO",
+    "message": "Fire data received but does not meet hazard thresholds",
+    "metadata": {},
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1382,8 +1285,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/kitchen/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "PIR_KITCHEN",
@@ -1392,8 +1295,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_KITCHEN",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1402,8 +1305,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -1412,8 +1315,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_LIVING_ROOM",
@@ -1422,355 +1325,12 @@
     "logLevel": "SENSOR_DATA",
     "message": "Processing fire data",
     "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
     },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:30",
-    "unixTimestamp": 1777395990
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_HAZARD_DETECTED",
@@ -1779,96 +1339,96 @@
     "logLevel": "EMERGENCY",
     "message": "FIRE HAZARD DETECTED! Activating emergency response",
     "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
+      "coLevel": 500,
+      "smokeLevel": 999.0,
+      "temperature": 155.8000030517578
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "lock_main",
+    "deviceId": "LOCK_MAIN",
     "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
+    "message": "UNLOCKING THE HOUSE DOOR",
     "metadata": {
-      "location": "KITCHEN",
+      "location": "LIVING_ROOM",
       "topic": "actuators/lock"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "lock_main",
+    "deviceId": "LOCK_MAIN",
     "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
     "message": "Sending command UNLOCK",
     "metadata": {
       "action": "UNLOCK",
       "actuatorTopic": "actuators/lock"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "sprinkler_KITCHEN",
+    "deviceId": "SPRINKLER_LIVING_ROOM",
     "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
     "message": "Sending command START",
     "metadata": {
       "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
+      "actuatorTopic": "actuators/living_room/sprinkler"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "light_KITCHEN",
+    "deviceId": "LIGHT_LIVING_ROOM",
     "deviceType": "LIGHT",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
     "message": "Sending command TURN_ON",
     "metadata": {
       "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
+      "actuatorTopic": "actuators/living_room/light"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "speaker_KITCHEN",
+    "deviceId": "SPEAKER_LIVING_ROOM",
     "deviceType": "SPEAKER",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
     "message": "Sending command TURN_ON",
     "metadata": {
       "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
+      "actuatorTopic": "actuators/living_room/speaker",
       "value": "100"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BRIGADE",
     "deviceType": "FIRE_SENSOR",
     "location": "HALLWAY",
     "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
+    "message": "CALLING FIRE BRIGADE FOR LIVING_ROOM",
     "metadata": {
-      "location": "KITCHEN",
+      "location": "LIVING_ROOM",
       "topic": "actuators/dialer"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
-    "deviceId": "dialer_main",
+    "deviceId": "DIALER_MAIN",
     "deviceType": "DIALER",
-    "location": "KITCHEN",
+    "location": "LIVING_ROOM",
     "logLevel": "ACTUATOR_ACTION",
     "message": "Sending command DIAL_FIRE_BRIGADE",
     "metadata": {
@@ -1876,72 +1436,8 @@
       "actuatorTopic": "actuators/dialer",
       "value": "DIAL_FIRE_BRIGADE"
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1950,8 +1446,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/living_room/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "PIR_LIVING_ROOM",
@@ -1960,8 +1456,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_LIVING_ROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -1970,8 +1466,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -1980,8 +1476,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -1994,8 +1490,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BEDROOM",
@@ -2004,8 +1500,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -2014,8 +1510,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bedroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "PIR_BEDROOM",
@@ -2024,8 +1520,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BEDROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -2034,8 +1530,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -2044,8 +1540,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -2058,8 +1554,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_BATHROOM",
@@ -2068,8 +1564,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -2078,8 +1574,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/bathroom/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "PIR_BATHROOM",
@@ -2088,8 +1584,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_BATHROOM",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -2098,8 +1594,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/fire",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -2108,8 +1604,8 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: FIRE_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -2122,8 +1618,8 @@
       "smokeLevel": 100.0,
       "temperature": 25.0
     },
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "FIRE_HALLWAY",
@@ -2132,8 +1628,8 @@
     "logLevel": "INFO",
     "message": "Fire data received but does not meet hazard thresholds",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "Hub",
@@ -2142,8 +1638,8 @@
     "logLevel": "INFO",
     "message": "Received message on topic: sensors/hallway/pir",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   },
   {
     "deviceId": "PIR_HALLWAY",
@@ -2152,2527 +1648,7 @@
     "logLevel": "INFO",
     "message": "Parsed message - Device: PIR_HALLWAY",
     "metadata": {},
-    "timestamp": "2026-04-28 19:06:33",
-    "unixTimestamp": 1777395993
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_HAZARD_DETECTED",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:36",
-    "unixTimestamp": 1777395996
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_HAZARD_DETECTED",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:39",
-    "unixTimestamp": 1777395999
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_HAZARD_DETECTED",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:42",
-    "unixTimestamp": 1777396002
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_HAZARD_DETECTED",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:45",
-    "unixTimestamp": 1777396005
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/health",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_HEALTH",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing health data",
-    "metadata": {
-      "diastolic": 85,
-      "heartRate": 95,
-      "spo2": 97,
-      "systolic": 130
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_HEALTH",
-    "deviceType": "WRISTBAND",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Health data is within normal limits",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/wristband/motion",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: WRISTBAND_MOTION",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing motion data",
-    "metadata": {
-      "magnitude": 1.0
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "WRISTBAND_MOTION",
-    "deviceType": "WRISTBAND",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Motion event not classified as a fall",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_KITCHEN",
-    "deviceType": "FIRE_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_HAZARD_DETECTED",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "FIRE HAZARD DETECTED! Activating emergency response",
-    "metadata": {
-      "coLevel": 45,
-      "smokeLevel": 620.0,
-      "temperature": 88.5
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Unlocking the house door ",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "lock_main",
-    "deviceType": "DOOR_LOCK",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command UNLOCK",
-    "metadata": {
-      "action": "UNLOCK",
-      "actuatorTopic": "actuators/lock"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "sprinkler_KITCHEN",
-    "deviceType": "SPRINKLER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command START",
-    "metadata": {
-      "action": "START",
-      "actuatorTopic": "actuators/kitchen/sprinkler"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "light_KITCHEN",
-    "deviceType": "LIGHT",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/light"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "speaker_KITCHEN",
-    "deviceType": "SPEAKER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command TURN_ON",
-    "metadata": {
-      "action": "TURN_ON",
-      "actuatorTopic": "actuators/kitchen/speaker",
-      "value": "100"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BRIGADE",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "EMERGENCY",
-    "message": "Calling fire brigade for KITCHEN",
-    "metadata": {
-      "location": "KITCHEN",
-      "topic": "actuators/dialer"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "dialer_main",
-    "deviceType": "DIALER",
-    "location": "KITCHEN",
-    "logLevel": "ACTUATOR_ACTION",
-    "message": "Sending command DIAL_FIRE_BRIGADE",
-    "metadata": {
-      "action": "DIAL_FIRE_BRIGADE",
-      "actuatorTopic": "actuators/dialer",
-      "value": "DIAL_FIRE_BRIGADE"
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/kitchen/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "PIR_KITCHEN",
-    "deviceType": "PIR_SENSOR",
-    "location": "KITCHEN",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_KITCHEN",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_LIVING_ROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/living_room/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "PIR_LIVING_ROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "LIVING_ROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_LIVING_ROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BEDROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bedroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "PIR_BEDROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BEDROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BEDROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_BATHROOM",
-    "deviceType": "FIRE_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/bathroom/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "PIR_BATHROOM",
-    "deviceType": "PIR_SENSOR",
-    "location": "BATHROOM",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_BATHROOM",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/fire",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: FIRE_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "SENSOR_DATA",
-    "message": "Processing fire data",
-    "metadata": {
-      "coLevel": 0,
-      "smokeLevel": 100.0,
-      "temperature": 25.0
-    },
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "FIRE_HALLWAY",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Fire data received but does not meet hazard thresholds",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "Hub",
-    "deviceType": "FIRE_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Received message on topic: sensors/hallway/pir",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
-  },
-  {
-    "deviceId": "PIR_HALLWAY",
-    "deviceType": "PIR_SENSOR",
-    "location": "HALLWAY",
-    "logLevel": "INFO",
-    "message": "Parsed message - Device: PIR_HALLWAY",
-    "metadata": {},
-    "timestamp": "2026-04-28 19:06:48",
-    "unixTimestamp": 1777396008
+    "timestamp": "2026-05-05 08:04:46",
+    "unixTimestamp": 1777961086
   }
 ]

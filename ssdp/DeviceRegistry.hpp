@@ -8,7 +8,7 @@
 #include <atomic>
 #include <chrono>
 #include <iostream>
-#include <iomanip> // For pretty table formatting
+#include <iomanip>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
@@ -23,6 +23,8 @@ class DeviceRegistry {
 public:
     explicit DeviceRegistry(const SSDPConfig& cfg) : config(cfg) {
         running.store(true);
+
+        inventory = config.allowedDeviceIds;
 
         listenThread = std::thread(&DeviceRegistry::receiverLoop, this);
 
@@ -56,11 +58,40 @@ private:
     };
     std::atomic<bool> running{false};
     std::thread listenThread;
-    std::thread monitorThread; // The new display thread
+    std::thread monitorThread; 
     int sockFd{-1};
 
     std::mutex mtx;
     std::map<std::string, RemoteDevice> devices;
+
+    std::vector<std::string> inventory;
+
+    std::map<std::string, RemoteDevice> inactiveDevices;
+
+    std::map<std::string, RemoteDevice> unavailableDevices;
+
+    std::map<std::string, std::chrono::steady_clock::time_point> excludedDevices;
+
+    bool isAllowedDevice(const std::string& id, DeviceType type) {
+       
+        if (config.allowedDeviceIds.empty() && config.allowedTypes.empty()) return true;
+
+        if (!config.allowedDeviceIds.empty()) {
+            for (const auto& allowed : config.allowedDeviceIds) {
+                if (allowed == id) return true;
+            }
+            return false;
+        }
+
+        if (!config.allowedTypes.empty()) {
+            for (const auto& t : config.allowedTypes) {
+                if (t == type) return true;
+            }
+            return false;
+        }
+
+        return true;
+    }
 
     void monitorLoop() {
         const std::string RESET  = "\033[0m";
@@ -75,7 +106,6 @@ private:
                 std::lock_guard<std::mutex> lock(mtx);
                 cleanupStaleDevices();
 
-                // Clear screen and home cursor
                 std::cout << "\033[2J\033[H"; 
 
                 std::cout << BOLD << CYAN << "╔══════════════════════════════════════════════════════════════════════════════╗" << RESET << std::endl;
@@ -89,8 +119,10 @@ private:
                         << "STATUS" << RESET << std::endl;
                 std::cout << std::string(80, '-') << std::endl;
 
+                // ACTIVE
+                std::cout << BOLD << "  Active Devices:" << RESET << std::endl;
                 if (devices.empty()) {
-                    std::cout << YELLOW << "\n     [!] IntelliSense is scanning... (Waiting for discovery packets)" << RESET << std::endl;
+                    std::cout << YELLOW << "    [none]" << RESET << std::endl;
                 } else {
                     for (const auto& [id, dev] : devices) {
                         
@@ -99,17 +131,70 @@ private:
                             displayId = displayId.substr(0, 27) + "...";
                         }
 
+                        auto now = std::chrono::steady_clock::now();
+                        auto timeout = std::chrono::seconds((config.interval * 2) + 2);
+                        bool online = (now - dev.lastSeen) <= timeout;
+
                         std::cout << "  " 
                                 << std::left << std::setw(33) << displayId 
                                 << std::setw(20) << to_string_enum(dev.type) 
-                                << std::setw(20) << to_string_enum(dev.location) 
-                                << GREEN << BOLD << "● ONLINE" << RESET << std::endl;
+                                << std::setw(20) << to_string_enum(dev.location);
+
+                        if (online) {
+                            std::cout << GREEN << BOLD << "● ONLINE" << RESET;
+                        } else {
+                            std::cout << YELLOW << BOLD << "○ OFFLINE" << RESET;
+                        }
+
+                        std::cout << std::endl;
+                    }
+                }
+
+                // INACTIVE
+                std::cout << std::endl << BOLD << "  Inactive Devices:" << RESET << std::endl;
+                if (inactiveDevices.empty()) {
+                    std::cout << YELLOW << "    [none]" << RESET << std::endl;
+                } else {
+                    for (const auto& [id, dev] : inactiveDevices) {
+                        std::string displayId = dev.id;
+                        if (displayId.length() > 30) displayId = displayId.substr(0,27) + "...";
+                        std::cout << "  " << std::left << std::setw(33) << displayId 
+                                  << std::setw(20) << to_string_enum(dev.type)
+                                  << std::setw(20) << to_string_enum(dev.location)
+                                  << YELLOW << BOLD << "○ INACTIVE" << RESET << std::endl;
+                    }
+                }
+
+                // UNAVAILABLE
+                std::cout << std::endl << BOLD << "  Unavailable Devices:" << RESET << std::endl;
+                if (unavailableDevices.empty()) {
+                    std::cout << YELLOW << "    [none]" << RESET << std::endl;
+                } else {
+                    for (const auto& [id, dev] : unavailableDevices) {
+                        std::string displayId = dev.id;
+                        if (displayId.length() > 30) displayId = displayId.substr(0,27) + "...";
+                        std::cout << "  " << std::left << std::setw(33) << displayId 
+                                  << std::setw(20) << to_string_enum(dev.type)
+                                  << std::setw(20) << to_string_enum(dev.location)
+                                  << RED << BOLD << "× UNAVAILABLE" << RESET << std::endl;
+                    }
+                }
+
+                // EXCLUDED
+                std::cout << std::endl << BOLD << "  Excluded Devices (seen but not allowed):" << RESET << std::endl;
+                if (excludedDevices.empty()) {
+                    std::cout << YELLOW << "    [none]" << RESET << std::endl;
+                } else {
+                    for (const auto& [id, ts] : excludedDevices) {
+                        std::cout << "  " << std::left << std::setw(33) << id
+                                  << std::setw(20) << "-" << std::setw(20) << "-"
+                                  << CYAN << "! EXCLUDED" << RESET << std::endl;
                     }
                 }
                 std::cout << std::string(80, '-') << std::endl;
                 std::cout << " System Status: " << GREEN << "HEALTHY" << RESET 
-                        << " | Devices: " << BOLD << devices.size() << RESET 
-                        << " | Interval: " << config.interval << "s" << std::endl;
+                    << " | Devices: " << BOLD << devices.size() << RESET 
+                    << " | Interval: " << config.interval << "s" << std::endl;
             }
 
             std::this_thread::sleep_for(std::chrono::seconds(5));
@@ -154,9 +239,25 @@ private:
         if (idEnd == std::string::npos) return; 
         std::string id = usn.substr(0, idEnd);
         
-        std::lock_guard<std::mutex> lock(mtx);
+            std::lock_guard<std::mutex> lock(mtx);
         if (nts == "ssdp:byebye") {
-            devices.erase(id);
+            // move to unavailableDevices if we know this device
+            auto dit = devices.find(id);
+            if (dit != devices.end()) {
+                unavailableDevices[id] = dit->second;
+                devices.erase(dit);
+            } else {
+                // maybe was inactive earlier
+                auto iit = inactiveDevices.find(id);
+                if (iit != inactiveDevices.end()) {
+                    unavailableDevices[id] = iit->second;
+                    inactiveDevices.erase(iit);
+                } else {
+                    // unknown device sent byebye; record minimal info
+                    RemoteDevice rv = {id, DeviceType::WRISTBAND, Room::HALLWAY, std::chrono::steady_clock::now()};
+                    unavailableDevices[id] = rv;
+                }
+            }
         } else if (nts == "ssdp:alive") {
 
             std::string typeStr = extractValue(usn, "type:", "::");
@@ -167,7 +268,20 @@ private:
             DeviceType type = from_string_enum<DeviceType>(typeStr);
             Room room       = from_string_enum<Room>(roomStr);
             
-            devices[id] = {id, type, room, std::chrono::steady_clock::now()};
+            auto now = std::chrono::steady_clock::now();
+
+            if (!isAllowedDevice(id, type)) {
+                excludedDevices[id] = now;
+                std::cerr << "[DeviceRegistry] Excluding device by policy: " << id << std::endl;
+                return;
+            }
+
+
+            unavailableDevices.erase(id);
+            inactiveDevices.erase(id);
+            excludedDevices.erase(id);
+
+            devices[id] = {id, type, room, now};
         }
     }
 
@@ -175,9 +289,13 @@ private:
         auto now = std::chrono::steady_clock::now();
         auto timeout = std::chrono::seconds((config.interval * 2) + 2);
         for (auto it = devices.begin(); it != devices.end(); ) {
-            if (now - it->second.lastSeen > timeout) it = devices.erase(it);
-            else ++it;
+            if (now - it->second.lastSeen > timeout) {
+                std::cerr << "[DeviceRegistry] Marking inactive: " << it->first << std::endl;
+                inactiveDevices[it->first] = it->second;
+                it = devices.erase(it);
+            } else ++it;
         }
+
     }
 
     std::string extractValue(const std::string& s, const std::string& pre, const std::string& post) {

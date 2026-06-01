@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include "../third_party/nlohmann/json.hpp"
 
 using json = nlohmann::json;
@@ -149,6 +150,9 @@ struct SSDPConfig {
   int port = 1900;
   int interval = 30;
   int ttl = 2;
+  std::vector<std::string> allowedDeviceIds;
+  std::vector<DeviceType> allowedTypes;
+  bool showOfflineDevices = true;
 };
 
 struct RemoteDevice {

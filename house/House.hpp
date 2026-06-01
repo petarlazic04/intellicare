@@ -30,7 +30,40 @@ private:
         "239.255.255.250", 
         1900, 
         30, 
-        2
+        2,
+        {
+            "WRISTBAND_HEALTH",
+            "WRISTBAND_MOTION",
+            "MAIN_DIALER",
+            "MAIN_LOCK",
+            "FIRE_KITCHEN",
+            "PIR_KITCHEN",
+            "SPRINKLER_KITCHEN",
+            "LIGHT_KITCHEN",
+            "SPEAKER_KITCHEN",
+            "FIRE_LIVING_ROOM",
+            "PIR_LIVING_ROOM",
+            "SPRINKLER_LIVING_ROOM",
+            "LIGHT_LIVING_ROOM",
+            "SPEAKER_LIVING_ROOM",
+            "FIRE_BEDROOM",
+            "PIR_BEDROOM",
+            "SPRINKLER_BEDROOM",
+            "LIGHT_BEDROOM",
+            "SPEAKER_BEDROOM",
+            "FIRE_BATHROOM",
+            "PIR_BATHROOM",
+            "SPRINKLER_BATHROOM",
+            "LIGHT_BATHROOM",
+            "SPEAKER_BATHROOM",
+            "FIRE_HALLWAY",
+            "PIR_HALLWAY",
+            "SPRINKLER_HALLWAY",
+            "LIGHT_HALLWAY",
+            "SPEAKER_HALLWAY"
+        },
+        {},
+        false
     };
     int port;
     

@@ -1,5 +1,6 @@
 #include "MqttClient.h"
 #include <QDebug>
+#include <cmath>
 
 // Use nlohmann/json for parsing (same lib as IntelliCare)
 #include "../third_party/nlohmann/json.hpp"
@@ -48,7 +49,7 @@ bool MqttClient::connectToBroker(const QString& host, int port) {
         return false;
     }
     mosquitto_loop_start(m_mosq);
-    m_timer->start(100);  // poll every 100ms
+    m_timer->start(100);
     return true;
 }
 
@@ -81,6 +82,7 @@ void MqttClient::onConnectStatic(struct mosquitto*, void* obj, int rc) {
         };
 
         sub("sensors/wristband/health");
+        sub("sensors/wristband");        // some scenarios use this short form
         sub("sensors/wristband/motion");
 
         for (const auto& room : ROOM_KEYS) {
@@ -91,6 +93,10 @@ void MqttClient::onConnectStatic(struct mosquitto*, void* obj, int rc) {
         }
         sub("actuators/lock");
         sub("actuators/dialer");
+
+        for (const auto& room : ROOM_KEYS) {
+            sub(("actuators/" + room + "/speaker").toUtf8().constData());
+        }
 
         emit self->connected();
         self->m_data->addLog(AlertLevel::OK, "MQTT", "Connected to broker — all topics subscribed");
@@ -119,32 +125,33 @@ void MqttClient::onMessageStatic(struct mosquitto*, void* obj,
 
 // ── Message dispatcher ────────────────────────────────────────────────────────
 void MqttClient::onMessage(const QString& topic, const QString& payload) {
-    // IntelliCare wraps data in: {"deviceId":...,"deviceType":...,"timestamp":...,"location":...,"payload":{"type":...,"data":{...}}}
-    // But scenario JSON sends raw data directly — handle both.
-    QString dataStr = payload;
+    QString sensorData = payload;
     try {
         auto j = json::parse(payload.toStdString());
-        if (j.contains("payload") && j["payload"].contains("data")) {
-            dataStr = QString::fromStdString(j["payload"]["data"].dump());
-        }
-    } catch (...) { /* use raw payload */ }
+        if (j.contains("payload") && j["payload"].contains("data"))
+            sensorData = QString::fromStdString(j["payload"]["data"].dump());
+    } catch (...) {}
 
     if (topic == "sensors/wristband/health") {
-        parseHealthPayload(dataStr);
+        parseHealthPayload(sensorData);
+    } else if (topic == "sensors/wristband") {
+        // Some scenarios send health data to sensors/wristband (without /health)
+        parseHealthPayload(sensorData);
     } else if (topic == "sensors/wristband/motion") {
-        parseMotionPayload(dataStr);
+        parseMotionPayload(sensorData);
     } else if (topic == "actuators/lock") {
-        parseLockPayload(dataStr);
+        parseLockPayload(payload);      // raw — parser extracts actionType itself
     } else if (topic == "actuators/dialer") {
-        parseDialerPayload(dataStr);
+        parseDialerPayload(payload);    // raw
     } else {
         int roomIdx = roomIndexFromTopic(topic);
         if (roomIdx < 0) return;
 
-        if (topic.endsWith("/fire"))       parseFirePayload(roomIdx, dataStr);
-        else if (topic.endsWith("/pir"))   parsePIRPayload(roomIdx, dataStr);
-        else if (topic.endsWith("/sprinkler")) parseSprinklerPayload(roomIdx, dataStr);
-        else if (topic.endsWith("/light"))     parseLightPayload(roomIdx, dataStr);
+        if (topic.endsWith("/fire"))           parseFirePayload(roomIdx, sensorData);
+        else if (topic.endsWith("/pir"))       parsePIRPayload(roomIdx, sensorData);
+        else if (topic.endsWith("/sprinkler")) parseSprinklerPayload(roomIdx, payload); // raw
+        else if (topic.endsWith("/light"))     parseLightPayload(roomIdx, payload);     // raw
+        else if (topic.endsWith("/speaker"))   parseSpeakerPayload(roomIdx, payload);   // raw
     }
 }
 
@@ -179,8 +186,17 @@ void MqttClient::parseHealthPayload(const QString& raw) {
 void MqttClient::parseMotionPayload(const QString& raw) {
     try {
         auto j = json::parse(raw.toStdString());
+
+        float accelX = j.value("accelX", 0.0f);
+        float accelY = j.value("accelY", 0.0f);
+        float accelZ = j.value("accelZ", 0.0f);
+
         float magnitude = 0.0f;
-        if (j.contains("magnitude")) magnitude = j["magnitude"].get<float>();
+        if (j.contains("magnitude")) {
+            magnitude = j["magnitude"].get<float>();
+        } else if (accelX != 0.0f || accelY != 0.0f || accelZ != 0.0f) {
+            magnitude = std::sqrt(accelX*accelX + accelY*accelY + accelZ*accelZ);
+        }
 
         HealthState h = m_data->health;
         h.fallMagnitude = magnitude;
@@ -239,9 +255,23 @@ void MqttClient::parsePIRPayload(int idx, const QString& raw) {
 
 void MqttClient::parseSprinklerPayload(int idx, const QString& raw) {
     try {
-        auto j = json::parse(raw.toStdString());
+        auto outer = json::parse(raw.toStdString());
+
+        // Hub sends full Message via JSONAdapter::encode:
+        // { "deviceId":..., "payload": { "type":"COMMAND", "data": {"actionType":"START","value":""} } }
+        json data = outer;
+        if (outer.contains("payload") && outer["payload"].contains("data"))
+            data = outer["payload"]["data"];
+
         bool on = false;
-        if (j.contains("active")) on = j["active"].get<bool>();
+        if (data.contains("actionType")) {
+            std::string action = data["actionType"].get<std::string>();
+            on = (action == "START" || action == "TURN_ON");
+        } else if (data.contains("active")) {
+            // fallback: direct state field
+            on = data["active"].get<bool>();
+        }
+
         m_data->setRoomSprinkler(idx, on);
         m_data->addLog(on ? AlertLevel::WARNING : AlertLevel::OK,
                        "SPRINKLER_" + m_data->rooms[idx].name.toUpper().replace(" ","_"),
@@ -251,19 +281,53 @@ void MqttClient::parseSprinklerPayload(int idx, const QString& raw) {
 
 void MqttClient::parseLightPayload(int idx, const QString& raw) {
     try {
-        auto j = json::parse(raw.toStdString());
-        bool on = false; int br = 0;
-        if (j.contains("on"))         on = j["on"].get<bool>();
-        if (j.contains("brightness")) br = j["brightness"].get<int>();
+        auto outer = json::parse(raw.toStdString());
+
+        json data = outer;
+        if (outer.contains("payload") && outer["payload"].contains("data"))
+            data = outer["payload"]["data"];
+
+        bool on = false;
+        int  br = 0;
+        if (data.contains("actionType")) {
+            std::string action = data["actionType"].get<std::string>();
+            if (action == "TURN_ON") {
+                on = true; br = 100;
+            } else if (action == "TURN_OFF") {
+                on = false; br = 0;
+            } else if (action == "SET_LEVEL" && data.contains("value")) {
+                br = std::stoi(data["value"].get<std::string>());
+                on = (br > 0);
+            }
+        } else {
+            // fallback: direct state fields
+            if (data.contains("on"))         on = data["on"].get<bool>();
+            if (data.contains("brightness")) br = data["brightness"].get<int>();
+        }
+
         m_data->setRoomLight(idx, on, br);
+        m_data->addLog(AlertLevel::OK,
+                       "LIGHT_" + m_data->rooms[idx].name.toUpper().replace(" ","_"),
+                       m_data->rooms[idx].name + " light: " + (on ? QString("ON (%1%)").arg(br) : "off"));
     } catch (...) {}
 }
 
 void MqttClient::parseLockPayload(const QString& raw) {
     try {
-        auto j = json::parse(raw.toStdString());
+        auto outer = json::parse(raw.toStdString());
+
+        json data = outer;
+        if (outer.contains("payload") && outer["payload"].contains("data"))
+            data = outer["payload"]["data"];
+
         GlobalActuatorState g = m_data->globals;
-        if (j.contains("locked")) g.locked = j["locked"].get<bool>();
+        if (data.contains("actionType")) {
+            std::string action = data["actionType"].get<std::string>();
+            g.locked = (action == "LOCK");
+        } else if (data.contains("locked")) {
+            g.locked = data["locked"].get<bool>();
+        }
+
         m_data->setGlobals(g);
         m_data->addLog(AlertLevel::OK, "LOCK",
                        g.locked ? "Door locked" : "Door UNLOCKED");
@@ -272,14 +336,46 @@ void MqttClient::parseLockPayload(const QString& raw) {
 
 void MqttClient::parseDialerPayload(const QString& raw) {
     try {
-        auto j = json::parse(raw.toStdString());
+        auto outer = json::parse(raw.toStdString());
+
+        json data = outer;
+        if (outer.contains("payload") && outer["payload"].contains("data"))
+            data = outer["payload"]["data"];
+
         GlobalActuatorState g = m_data->globals;
-        if (j.contains("actionType")) {
-            g.dialerAction = QString::fromStdString(j["actionType"].get<std::string>());
-            g.dialerBusy = true;
+        if (data.contains("actionType")) {
+            g.dialerAction = QString::fromStdString(data["actionType"].get<std::string>());
+            g.dialerBusy   = true;
         }
         m_data->setGlobals(g);
         m_data->addLog(AlertLevel::ALARM, "DIALER",
-                       "Emergency call: " + g.dialerAction);
+                       "Emergency call triggered: " + g.dialerAction);
+        emit m_data->alarmTriggered("Emergency call: " + g.dialerAction);
+    } catch (...) {}
+}
+
+void MqttClient::parseSpeakerPayload(int idx, const QString& raw) {
+    try {
+        auto outer = json::parse(raw.toStdString());
+
+        json data = outer;
+        if (outer.contains("payload") && outer["payload"].contains("data"))
+            data = outer["payload"]["data"];
+
+        if (data.contains("actionType")) {
+            std::string action = data["actionType"].get<std::string>();
+            int volume = 0;
+            if (action == "TURN_ON")  volume = 50;
+            else if (action == "TURN_OFF") volume = 0;
+            else if (action == "SET_LEVEL" && data.contains("value"))
+                volume = std::stoi(data["value"].get<std::string>());
+
+            m_data->rooms[idx].actuators.speakerLevel = volume;
+            m_data->addLog(volume > 0 ? AlertLevel::WARNING : AlertLevel::OK,
+                           "SPEAKER_" + m_data->rooms[idx].name.toUpper().replace(" ","_"),
+                           m_data->rooms[idx].name + " speaker: " +
+                           (volume > 0 ? QString("ON (vol %1)").arg(volume) : "off"));
+            emit m_data->dataChanged();
+        }
     } catch (...) {}
 }

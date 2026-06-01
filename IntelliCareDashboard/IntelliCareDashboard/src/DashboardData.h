@@ -78,6 +78,7 @@ struct LogEntry {
     QString    source;
     QString    message;
 };
+Q_DECLARE_METATYPE(LogEntry)
 
 // ── Complete dashboard state ─────────────────────────────────────────────────
 class DashboardData : public QObject {
@@ -112,6 +113,7 @@ public:
     void setRoomLight    (int idx, bool on, int brightness=100);
 
     void addLog(AlertLevel lvl, const QString& src, const QString& msg);
+    void resetState();  // clears all sensor/actuator state after scenario ends
     const QList<LogEntry>& logEntries() const { return m_log; }
 
 signals:

@@ -60,6 +60,7 @@ private:
     void parsePIRPayload    (int roomIdx, const QString& payload);
     void parseSprinklerPayload(int roomIdx, const QString& payload);
     void parseLightPayload  (int roomIdx, const QString& payload);
+    void parseSpeakerPayload(int roomIdx, const QString& payload);
     void parseLockPayload   (const QString& payload);
     void parseDialerPayload (const QString& payload);
 

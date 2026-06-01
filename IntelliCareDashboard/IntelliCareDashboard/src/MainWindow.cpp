@@ -26,13 +26,22 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     connect(m_data, &DashboardData::newLogEntry,  this, &MainWindow::onNewLogEntry);
     connect(m_data, &DashboardData::alarmTriggered, this, &MainWindow::onAlarmTriggered);
 
+    // Refresh UI immediately on any data change (don't wait for 3s timer)
+    connect(m_data, &DashboardData::dataChanged, this, [this]() {
+        if (m_healthPanel) m_healthPanel->refresh();
+        if (m_motionPanel) m_motionPanel->refresh();
+        if (m_deviceCtl)   m_deviceCtl->refresh();
+        for (auto* c : m_roomCards) if (c) c->refresh();
+        updateHeader();
+    });
+
     // ── UI ────────────────────────────────────────────────────────────────
     buildUi();
 
     // ── Refresh timer (3 s) ───────────────────────────────────────────────
     m_refreshTimer = new QTimer(this);
     connect(m_refreshTimer, &QTimer::timeout, this, &MainWindow::onRefreshTimer);
-    m_refreshTimer->start(3000);
+    m_refreshTimer->start(1000);  // timestamp update only — panels refresh via dataChanged
 
     // ── Alarm flash timer ─────────────────────────────────────────────────
     m_alarmFlashTimer = new QTimer(this);
@@ -385,10 +394,10 @@ void MainWindow::onStartMonitoring() {
 
 void MainWindow::onStopMonitoring() {
     m_data->setMonitoring(false);
+    m_data->resetState();
     m_startBtn->setEnabled(true);
     m_stopBtn->setEnabled(false);
-    m_data->addLog(AlertLevel::WARNING, "DASHBOARD", "Monitoring stopped by user");
-    statusBar()->showMessage("Monitoring stopped");
+    statusBar()->showMessage("Monitoring stopped — state reset");
 }
 
 void MainWindow::onMqttConnected() {

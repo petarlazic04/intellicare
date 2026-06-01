@@ -17,7 +17,8 @@ SOURCES += \
     src/widgets/ActivityLog.cpp \
     src/widgets/DeviceControlPanel.cpp \
     src/widgets/HealthPanel.cpp \
-    src/widgets/MotionPanel.cpp
+    src/widgets/MotionPanel.cpp \
+    src/widgets/ScenarioLauncher.cpp
 
 HEADERS += \
     src/MainWindow.h \
@@ -28,7 +29,8 @@ HEADERS += \
     src/widgets/ActivityLog.h \
     src/widgets/DeviceControlPanel.h \
     src/widgets/HealthPanel.h \
-    src/widgets/MotionPanel.h
+    src/widgets/MotionPanel.h \
+    src/widgets/ScenarioLauncher.h
 
 # mosquitto MQTT library
 LIBS += -lmosquitto

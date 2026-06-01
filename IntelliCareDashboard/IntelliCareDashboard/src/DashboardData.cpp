@@ -152,3 +152,19 @@ void DashboardData::addLog(AlertLevel lvl, const QString& src, const QString& ms
     if (m_log.size() > 200) m_log.removeLast();
     emit newLogEntry(e);
 }
+
+void DashboardData::resetState() {
+    // Reset all room sensor + actuator data
+    for (int i = 0; i < 5; ++i) {
+        rooms[i].fire    = RoomFireData{};
+        rooms[i].pir     = RoomPIRData{};
+        rooms[i].actuators = RoomActuatorData{};
+    }
+    // Reset health
+    health = HealthState{};
+    // Reset global actuators
+    globals = GlobalActuatorState{};
+
+    addLog(AlertLevel::OK, "DASHBOARD", "State reset — ready for next scenario");
+    emit dataChanged();
+}
